@@ -1,0 +1,43 @@
+#+TITLE: ME 244.3 Dynamics
+#+SUBTITLE: Spring 2025
+#+AUTHOR: Fethi Okyar
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2> <h3>%s</h3> <h3>%a</h3>
+#+OPTIONS: timestamp:nil toc:1 num:nil
+#+REVEAL_EXTRA_CSS: ./mystyle.css
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+
+
+* Weekly outline
+#+REVEAL_HTML: <div style="font-size: 80%;">
+| Week | Date  | Topics                                   |
+|------+-------+------------------------------------------|
+|    1 | Oct,1 | about, [[./introduction.html][introduction]], [[./particle_kinematics.html][particle kinematics]] |
+|    2 | Oct,8 |                                          |
+|      |       |                                          |
+
+
+* Blog
+This is meant to be a page where the weekly progress is indicated with notes about homeworks, the next weeks' reading assignment, etc. (But it was started towards the end of the semester)
+** May 26, the Latex Way of Writing Your Thesis
+*** Overleaf: Latex Cloud Service
+- Open a personal account in https://overleaf.com.
+- Create a copy of the thesis template shared at: https://www.overleaf.com/read/qgspkfjykdbh#7d8c90
+- Start working on your copy.
+
+*** Install a Latex Editor and Compiler
+- Example latex editor: https://www.texstudio.org/
+- Example latex compiler: https://miktex.org/
+  
+** June 2,
+*** What is git, and how does it sync with github.com?
+- check out this website for documentation and downloads
+  https://git-scm.com/
+  
+*** Git: How to Sync a Local Copy with Overleaf
+- Open a personal account in https://github.com.
+- Install [[https://gitforwindows.org/][git for windows]].
+- Get link from overleaf and clone it in your own platform.
+
