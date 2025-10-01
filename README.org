@@ -12,32 +12,15 @@
 
 * Weekly outline
 #+REVEAL_HTML: <div style="font-size: 80%;">
-| Week | Date  | Topics                                   |
-|------+-------+------------------------------------------|
-|    1 | Oct,1 | about, [[./introduction.html][introduction]], [[./particle_kinematics.html][particle kinematics]] |
-|    2 | Oct,8 |                                          |
-|      |       |                                          |
+| Week | Date  | Topics                                  |
+|------+-------+-----------------------------------------|
+|    1 | Oct,1 | about, [[./1-introduction.html][introduction]], [[./2.2-rectilinear_motion.html][rectilinear motion]] |
+|    2 | Oct,8 |                                         |
+|    3 |       |                                         |
 
 
+* References
+** Computer Algebra System (maxima)
+- [[https://maxima.sourceforge.io/docs/tutorial/en/gaertner-tutorial-revision/Contents.htm][The Computer Algebra Program Maxima - a Tutorial]]
 * Blog
 This is meant to be a page where the weekly progress is indicated with notes about homeworks, the next weeks' reading assignment, etc. (But it was started towards the end of the semester)
-** May 26, the Latex Way of Writing Your Thesis
-*** Overleaf: Latex Cloud Service
-- Open a personal account in https://overleaf.com.
-- Create a copy of the thesis template shared at: https://www.overleaf.com/read/qgspkfjykdbh#7d8c90
-- Start working on your copy.
-
-*** Install a Latex Editor and Compiler
-- Example latex editor: https://www.texstudio.org/
-- Example latex compiler: https://miktex.org/
-  
-** June 2,
-*** What is git, and how does it sync with github.com?
-- check out this website for documentation and downloads
-  https://git-scm.com/
-  
-*** Git: How to Sync a Local Copy with Overleaf
-- Open a personal account in https://github.com.
-- Install [[https://gitforwindows.org/][git for windows]].
-- Get link from overleaf and clone it in your own platform.
-

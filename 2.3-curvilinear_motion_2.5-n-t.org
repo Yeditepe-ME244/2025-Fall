@@ -1,0 +1,36 @@
+#+TITLE:  curvilinear motion
+#+AUTHOR: Fethi Okyar
+#+DATE: 2025-09-30
+#+SUBTITLE: Particle Kinematics
+#+DESCRIPTION: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2> <h3>%s</h3> <h4>%d</h4>
+#+OPTIONS: timestamp:nil toc:1 num:t
+#+REVEAL_EXTRA_CSS: ../style.css
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+#+HTML_HEAD_EXTRA: </style>
+
+* Curvilinear Motion
+- Define motion
+- use the limit concept from calculus
+- velocity
+- acceleration
+- establish a differential relating $s$, $\dot{s}$, and $\ddot{s}$
+  
+** Graphical Interpretation
+*** Time-domain plots
+#+ATTR_HTML: :width 500px
+[[./meriam/figure_2.3.png]]
+
+*** Phase plots
+#+ATTR_HTML: :width 500px
+[[./meriam/figure_2.4.png]]
+
+* Examples
+
+* Review
+From [[https://docs.google.com/file/d/0Bw8MfqmgWLS4V0NFR2dVUWpuYzg][the book]]: Chapter 2.2, Problems
