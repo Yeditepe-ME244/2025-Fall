@@ -14,23 +14,46 @@
 #+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
 #+HTML_HEAD_EXTRA: </style>
 
-* Curvilinear Motion
-- Define motion
-- use the limit concept from calculus
-- velocity
-- acceleration
-- establish a differential relating $s$, $\dot{s}$, and $\ddot{s}$
-  
-** Graphical Interpretation
-*** Time-domain plots
-#+ATTR_HTML: :width 500px
-[[./meriam/figure_2.3.png]]
+* Plane Curvilinear Motion
+- motion within a plane
+- the path trajectory
+- the path variable, $s$
 
-*** Phase plots
-#+ATTR_HTML: :width 500px
-[[./meriam/figure_2.4.png]]
+** Description without Coordinates
+- change in placement, $\Delta\boldsymbol{r}$
+- velocity, $\boldsymbol{v}=\dot{\boldsymbol{r}}$
+- velocity magnitude, $v=\dot{s}$
+
+** Acceleration
+- change in velocity, $\Delta\boldsymbol{v}$
+- acceleration, $\boldsymbol{a}=\dot{\boldsymbol{v}}$
+
+* n-t Coordinates
+- normal and tangent to the path
+- natural unit vectors ($\boldsymbol{e}_n$ and $\boldsymbol{e}_t$)
+- center of  curvature, $C$,  and the radius of curvature, $\rho$
+- rotation about $C$
+- velocity is aligned with the tangent
+
+** Acceleration Components
+- tangential acceleration, $a_t = \ddot{s}$
+- normal acceleration
 
 * Examples
+#+ATTR_HTML: :width 900px
+[[./meriam/prob_S2.7.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 900px
+[[./meriam/prob_S2.8.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 900px
+[[./meriam/prob_O2.121.jpg]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_O2.125.jpg]]
 
 * Review
-From [[https://docs.google.com/file/d/0Bw8MfqmgWLS4V0NFR2dVUWpuYzg][the book]]: Chapter 2.2, Problems
+From [[https://docs.google.com/file/d/0Bw8MfqmgWLS4V0NFR2dVUWpuYzg][the book]]: Chapter 2.5, Problems
