@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>curvilinear motion</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>curvilinear motion</h2> <h3>Particle Kinematics</h3> <h4>2025-10-01</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org8732c10">1. Plane Curvilinear Motion</a></li>
+<li><a href="#/slide-orgb3936df">2. \(n-t\) <i>Natural</i> Coordinates</a></li>
+<li><a href="#/slide-orgf09fdd7">3. \(x-y\) <i>Cartesian</i> Coordinates</a></li>
+<li><a href="#/slide-org0165cf6">4. \(r-\theta\) <i>Polar</i> Coordinates</a></li>
+<li><a href="#/slide-org93c0576">5. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org8732c10">
+<h2 id="org8732c10"><span class="section-number-2">1.</span> Plane Curvilinear Motion</h2>
+<ul>
+<li>motion within a plane</li>
+<li>the path trajectory</li>
+<li>the path variable, \(s\)</li>
+
+</ul>
+</section>
+<section id="slide-orgf3f9d04">
+<h3 id="orgf3f9d04"><span class="section-number-3">1.1.</span> Description without Coordinates</h3>
+<ul>
+<li>change in placement, \(\Delta\boldsymbol{r}\)</li>
+<li>velocity, \(\boldsymbol{v}=\dot{\boldsymbol{r}}\)</li>
+<li>velocity magnitude, \(v=\dot{s}\)</li>
+
+</ul>
+</section>
+<section id="slide-org678169e">
+<h3 id="org678169e"><span class="section-number-3">1.2.</span> Acceleration</h3>
+<ul>
+<li>change in velocity, \(\Delta\boldsymbol{v}\)</li>
+<li>acceleration, \(\boldsymbol{a}=\dot{\boldsymbol{v}}\)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb3936df">
+<h2 id="orgb3936df"><span class="section-number-2">2.</span> \(n-t\) <i>Natural</i> Coordinates</h2>
+<ul>
+<li>normal and tangent to the path</li>
+<li>natural unit vectors (\(\boldsymbol{e}_n\) and \(\boldsymbol{e}_t\))</li>
+<li>center of  curvature, \(C\),  and the radius of curvature, \(\rho\)</li>
+<li>rotation about \(C\)</li>
+<li>velocity is aligned with the tangent</li>
+
+</ul>
+</section>
+<section id="slide-orgb68fc46">
+<h3 id="orgb68fc46"><span class="section-number-3">2.1.</span> Acceleration Components</h3>
+<ul>
+<li>tangential acceleration, \(a_t = \ddot{s}\)</li>
+<li>normal acceleration</li>
+
+</ul>
+</section>
+<section id="slide-org1ea52c8">
+<h3 id="org1ea52c8"><span class="section-number-3">2.2.</span> Examples</h3>
+
+<div id="org1bdc8d3" class="figure">
+<p><img src="./meriam/prob_S2.7.png" alt="prob_S2.7.png" width="900px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1ea52c8-split">
+
+<div id="orgbaf0b0a" class="figure">
+<p><img src="./meriam/prob_S2.8.png" alt="prob_S2.8.png" width="900px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1ea52c8-split">
+
+<div id="org40583f7" class="figure">
+<p><img src="./meriam/prob_O2.121.jpg" alt="prob_O2.121.jpg" width="800px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org1ea52c8-split">
+
+<div id="orgb462b52" class="figure">
+<p><img src="./meriam/prob_O2.125yazi.jpg" alt="prob_O2.125yazi.jpg" width="650px" />
+</p>
+</div>
+
+<div id="org90f781c" class="figure">
+<p><img src="./meriam/prob_O2.125.jpg" alt="prob_O2.125.jpg" width="500px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf09fdd7">
+<h2 id="orgf09fdd7"><span class="section-number-2">3.</span> \(x-y\) <i>Cartesian</i> Coordinates</h2>
+<ul>
+<li>motion is expressed in terms of unit vectors, \(\boldsymbol{i}\) and \(\boldsymbol{j}\)</li>
+<li>the unit vectors are fixed (they do not move during the motion), and their differentials are thus zero.</li>
+<li>\(\boldsymbol{r} = x \boldsymbol{i} + y \boldsymbol{j}\)</li>
+<li>\(\boldsymbol{v} = \dot{\boldsymbol{r}} = \dot{x} \boldsymbol{i} + \dot{y} \boldsymbol{j}\)</li>
+<li>\(\boldsymbol{a} = \ddot{\boldsymbol{r}} = \ddot{x} \boldsymbol{i} + \ddot{y} \boldsymbol{j}\)</li>
+
+</ul>
+</section>
+<section id="slide-orga332101">
+<h3 id="orga332101"><span class="section-number-3">3.1.</span> Projectile Motion</h3>
+<ul>
+<li>if the gravity direction coincides with one of the Cartesian axes (e.g. \(-y\) direction), then the acceleration components decompose</li>
+<li>\(a_x=0\) and \(a_y=-g\) (if all effects other than gravity can be excluded)</li>
+<li>Then the integration of the equations of motion from acceleration becomes possible</li>
+
+</ul>
+</section>
+<section id="slide-orgf71c1ac">
+<h3 id="orgf71c1ac"><span class="section-number-3">3.2.</span> Examples</h3>
+
+<div id="org082d83a" class="figure">
+<p><img src="./meriam/prob_S2.6.png" alt="prob_S2.6.png" width="1600px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org0165cf6">
+<h2 id="org0165cf6"><span class="section-number-2">4.</span> \(r-\theta\) <i>Polar</i> Coordinates</h2>
+<ul>
+<li>motion is expressed in terms of unit vectors, \(\boldsymbol{e}_r\) and \(\boldsymbol{e}_\theta\)</li>
+<li>the unit vectors reorient themselves with location (they rotate during the motion)</li>
+<li>differentials of the unit vectors are not zero
+\[ d\boldsymbol{e}_r =  d\theta\,\boldsymbol{e}_\theta \,\mathrm{and}\; d\boldsymbol{e}_\theta = -d\theta\,\boldsymbol{e}_r\]</li>
+<li>\(\boldsymbol{r} = r \boldsymbol{e}_r\)</li>
+<li>velocity and acceleration is found by differentiating \(\boldsymbol{r}\) with respect to time.</li>
+
+</ul>
+</section>
+<section id="slide-org358c231">
+<h3 id="org358c231"><span class="section-number-3">4.1.</span> Circular Motion</h3>
+<ul>
+<li>when the motion is circular, the radius \(r\) stays fixed and \(\dot{r}=0\)</li>
+<li>The kinematic equations are simplified accordingly.</li>
+
+</ul>
+</section>
+<section id="slide-org03ee1b4">
+<h3 id="org03ee1b4"><span class="section-number-3">4.2.</span> Examples</h3>
+
+<div id="org82b4f08" class="figure">
+<p><img src="./meriam/prob_S2.9.png" alt="prob_S2.9.png" width="1600px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org93c0576">
+<h2 id="org93c0576"><span class="section-number-2">5.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, F37, F38, 100, 113, 115, 121, 124, 128, 147, 153, 169, 175, 177, 179, 180, 182, 184, 186, 188, 192, 194
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

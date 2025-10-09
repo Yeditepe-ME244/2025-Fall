@@ -15,7 +15,7 @@
 | Week | Date  | Topics                                  |
 |------+-------+-----------------------------------------|
 |    1 | Oct,1 | about, [[./1-introduction.html][introduction]], [[./2.2-rectilinear_motion.html][rectilinear motion]] |
-|    2 | Oct,8 | [[./2.3-curvilinear_motion_2.5-n-t.html][curvilinear motion]]                      |
+|    2 | Oct,8 | [[./2.3-6-curvilinear_motion.html][curvilinear motion]]                      |
 |    3 |       |                                         |
 
 
