@@ -1,6 +1,6 @@
-#+TITLE:  rectilinear motion
+#+TITLE:  constrained motion
 #+AUTHOR: Fethi Okyar
-#+DATE: 2025-09-30
+#+DATE: 2025-10-13
 #+SUBTITLE: Particle Kinematics
 #+DESCRIPTION: 
 #+STARTUP: overview
@@ -14,7 +14,7 @@
 #+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
 #+HTML_HEAD_EXTRA: </style>
 
-* Particle Kinematics
+* Constrained Particle Motion
 - kinematics is the study of ...
 
 ** Bodies, Particles
@@ -31,31 +31,9 @@ Needs
 #+ATTR_HTML: :width 500px
 [[./meriam/figure_2.1.png]]
 
-** Coordinates
-- Cartesian:
-- Cylindrical:
-- Spherical:
-- Curvilinear ??
-
-* Rectilinear Motion
-- Define motion
-- use the limit concept from calculus
-- velocity
-- acceleration
-- establish a differential relating $s$, $\dot{s}$, and $\ddot{s}$
-  
-** Graphical Interpretation
-*** Time-domain plots
-#+ATTR_HTML: :width 500px
-[[./meriam/figure_2.3.png]]
-*** Phase plots
-#+ATTR_HTML: :width 500px
-[[./meriam/figure_2.4.png]]
-
 * Examples
-*** Problem 2.22 ([[https://docs.google.com/file/d/0Bw8MfqmgWLS4V0NFR2dVUWpuYzg][the book]])
-#+ATTR_HTML: :width 500px
-[[./meriam/prob_2.22.png]]
 
 * Review
-From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.2, Problems
+From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.9, Problems
+
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, 147, 153, 169, 175, 177, 179

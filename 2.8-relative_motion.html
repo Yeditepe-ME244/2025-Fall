@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>relative motion</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>relative motion</h2> <h3>Particle Kinematics</h3> <h4>2025-10-13</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org3fcad7f">1. Relative Motion between Systems in Translation</a></li>
+<li><a href="#/slide-orged1f65d">2. Examples</a></li>
+<li><a href="#/slide-org2e9ca98">3. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org3fcad7f">
+<h2 id="org3fcad7f"><span class="section-number-2">1.</span> Relative Motion between Systems in Translation</h2>
+<ul>
+<li>An <i>inertial</i> reference frame (coordinate system) is assumed to be stationary</li>
+<li>Coordinate measurements may be taken from frames attached to moving particles</li>
+<li>This section is about relating the inertial and moving measurements.</li>
+
+</ul>
+</section>
+<section id="slide-orgdaf0f93">
+<h4 id="orgdaf0f93"><span class="section-number-4">1.0.1.</span> Relating Inertial and Moving Measurements</h4>
+<ul>
+<li>The moving reference frame \(B\) has an inertial position reading: \(\boldsymbol{r}_B\)</li>
+<li>Object \(A\) has a position reading in the moving frame: \(\boldsymbol{r}_{A/B}\)
+(reads as position of \(A\) relative to \(B\))</li>
+<li>The position of \(A\) relative to the inertial frame can be found as: \(\boldsymbol{r}_A = \boldsymbol{r}_{A/B} + \boldsymbol{r}_B\)</li>
+
+</ul>
+
+
+<div id="orgce40b31" class="figure">
+<p><img src="./meriam/figure_2.17.png" alt="figure_2.17.png" width="800px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orged1f65d">
+<h2 id="orged1f65d"><span class="section-number-2">2.</span> Examples</h2>
+
+<div id="orgb1994b2" class="figure">
+<p><img src="./meriam/prob_S2.14.png" alt="prob_S2.14.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orged1f65d-split">
+
+<div id="org2075272" class="figure">
+<p><img src="./meriam/prob_2.188.png" alt="prob_2.188.png" width="900px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org2e9ca98">
+<h2 id="org2e9ca98"><span class="section-number-2">3.</span> Review</h2>
+<p>
+From <a href="https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf">the book</a>: Section 2.8, Problems
+</p>
+
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, 180, 182, 184, 186, 188, 192, 194
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

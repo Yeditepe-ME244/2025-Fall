@@ -89,4 +89,6 @@
   [[./meriam/prob_S2.9.png]]
   
 * Review
+From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.4, 2.5, and 2.6, Problems
+
 From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, F37, F38, 100, 113, 115, 121, 124, 128, 147, 153, 169, 175, 177, 179, 180, 182, 184, 186, 188, 192, 194
