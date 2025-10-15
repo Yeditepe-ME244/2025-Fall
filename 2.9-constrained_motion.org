@@ -15,23 +15,26 @@
 #+HTML_HEAD_EXTRA: </style>
 
 * Constrained Particle Motion
-- kinematics is the study of ...
+- The motion of two particles may be tied (connected) to one another by a string or a thin rod
+- A particle constrained in a slot is said to have a single degree of freedom (dof)
+- A system of two particles moving independently with one dof each forms a two dof system. 
 
-** Bodies, Particles
-- Bodies may be regarded as particles when ...
-
-** Motion Measurements
-*** Linear pathways
-Needs
-- a clock
-- a ruler
-- determine amount displacement and the time passed
-  
-*** Curved pathways
-#+ATTR_HTML: :width 500px
-[[./meriam/figure_2.1.png]]
+** Kinematic Analysis of Constrained Motion
+- Tying two particles results in a decrease in the order of their dofs from two to one. 
 
 * Examples
+#+ATTR_HTML: :width 700px
+[[./meriam/figure_2.19.png]]
+
+#+REVEAL: split
+When the cylinder $A$ has a downward velocity of 0.3 m/s, determine the velocity of $B$.
+
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_S2.15.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_2.216.png]]
 
 * Review
 From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.9, Problems
