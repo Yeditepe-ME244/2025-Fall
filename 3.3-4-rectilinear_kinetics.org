@@ -35,7 +35,7 @@ In general, we may speak of three approaches to solving problems in dynamics
   (It cannot be a measurement relative to a moving reference frame $B$, as in $\boldsymbol{a}^{A/B}$.)
 
 ** System of Units
-#+ATTR_HTML: :width 1100px
+#+ATTR_HTML: :width 1000px
 [[./meriam/figure_3.1.png]]
 
 ** Solution Properties
@@ -54,18 +54,30 @@ We talk about two types of motion, in general
   Here, the body is constrained from moving in certain directions by some restraining plane(s) that cancel some dofs and bear reaction forces (which may also have to be solved).
   
 * Examples
-#+ATTR_HTML: :width 700px
-[[./meriam/figure_2.19.png]]
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.1.png]]
 
 #+REVEAL: split
-When the cylinder $A$ has a downward velocity of 0.3 m/s, determine the velocity of $B$.
-
-#+ATTR_HTML: :width 700px
-[[./meriam/prob_S2.15.png]]
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.2.png]]
 
 #+REVEAL: split
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.3.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.4.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.5.png]]
+
+#+REVEAL: split
+Mass-pendulum assembly descending down from inclined plane
+
 #+ATTR_HTML: :width 700px
-[[./meriam/prob_2.216.png]]
+[[./meriam/prob_3..png]]
 
 * Review
 From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.9, Problems
