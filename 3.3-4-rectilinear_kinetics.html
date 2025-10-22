@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of bodies in rectilinear translation</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of bodies in rectilinear translation</h2> <h3>Particle Kinetics</h3> <h4>2025-10-22</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org9b5e653">1. Equations of Motion</a></li>
+<li><a href="#/slide-orga26be0e">2. Force, Mass, Acceleration</a></li>
+<li><a href="#/slide-org0293b3f">3. Examples</a></li>
+<li><a href="#/slide-orgbb24474">4. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org9b5e653">
+<h2 id="org9b5e653"><span class="section-number-2">1.</span> Equations of Motion</h2>
+<ul>
+<li>In <b>statics</b> problems the basic approach to solve mechanics was by using <i>equilibrium equations</i>
+\[ \sum_i \boldsymbol{F}_i = 0 \]</li>
+<li>In <b>dynamics</b> we use the <i>equations of motion</i> instead
+\[ \sum_i \boldsymbol{F}_i = m \dot{\boldsymbol{v}} \]</li>
+<li>This is also known as the <i>force, mass, acceleration</i> approach</li>
+
+</ul>
+</section>
+<section id="slide-org92fdc8e">
+<h3 id="org92fdc8e"><span class="section-number-3">1.1.</span> methods of approach</h3>
+<p>
+In general, we may speak of three approaches to solving problems in dynamics
+</p>
+<ul>
+<li>force, mass, acceleration</li>
+<li>work-energy principles</li>
+<li>impulse-momentum</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga26be0e">
+<h2 id="orga26be0e"><span class="section-number-2">2.</span> Force, Mass, Acceleration</h2>
+<p>
+<b>Mass</b> represents the inertia, also known as bodies resistance to a change in its&rsquo; rate of change of velocity
+  \[ \boldsymbol{F} = m \boldsymbol{a} \]
+</p>
+<ul>
+<li>The units in this equation should be consulted with care</li>
+<li>The acceleration used in the equation of motion should be an inertial measurement.<br />
+(It cannot be a measurement relative to a moving reference frame \(B\), as in \(\boldsymbol{a}^{A/B}\).)</li>
+
+</ul>
+</section>
+<section id="slide-orgcf0b8f9">
+<h3 id="orgcf0b8f9"><span class="section-number-3">2.1.</span> System of Units</h3>
+
+<div id="org5aaa951" class="figure">
+<p><img src="./meriam/figure_3.1.png" alt="figure_3.1.png" width="1100px" />
+</p>
+</div>
+</section>
+<section id="slide-orgba627e6">
+<h3 id="orgba627e6"><span class="section-number-3">2.2.</span> Solution Properties</h3>
+<ul>
+<li>This type of problems (force, mass, acceleration) are of <i>instantaneous</i> nature, i.e., we solve for the mechanics at a given instant in time.</li>
+<li>Two sub-categories can be identified:
+<ul>
+<li>Motion specified (kinematics driven)<br />
+Here, the kinematics (motion) is solved for first, as done in the previous chapter. The forces can be evaluated from the equation of motion, by evaluating the accelerations.</li>
+<li>Force specified (kinetics driven)<br />
+Here, kinematics and kinetics are solved simultaneously. Forces can be specified as a function of time, \(t\), position, \(s\), or velocity \(v\).</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org1b9c963">
+<h3 id="org1b9c963"><span class="section-number-3">2.3.</span> Motion Properties</h3>
+<p>
+We talk about two types of motion, in general
+</p>
+<ul>
+<li><b>unconstrained</b> motion<br />
+Here, each body in rectilinear translation is thought to have three dofs, where only one is active (the one in the direction of motion)</li>
+<li><b>constrained</b> motion<br />
+Here, the body is constrained from moving in certain directions by some restraining plane(s) that cancel some dofs and bear reaction forces (which may also have to be solved).</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org0293b3f">
+<h2 id="org0293b3f"><span class="section-number-2">3.</span> Examples</h2>
+
+<div id="org29a30ed" class="figure">
+<p><img src="./meriam/figure_2.19.png" alt="figure_2.19.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0293b3f-split">
+<p>
+When the cylinder \(A\) has a downward velocity of 0.3 m/s, determine the velocity of \(B\).
+</p>
+
+
+<div id="org8fb5343" class="figure">
+<p><img src="./meriam/prob_S2.15.png" alt="prob_S2.15.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0293b3f-split">
+
+<div id="org28fe6d6" class="figure">
+<p><img src="./meriam/prob_2.216.png" alt="prob_2.216.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgbb24474">
+<h2 id="orgbb24474"><span class="section-number-2">4.</span> Review</h2>
+<p>
+From <a href="https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf">the book</a>: Section 2.9, Problems
+</p>
+
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, 147, 153, 169, 175, 177, 179
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

@@ -17,6 +17,7 @@
 |    1 | Oct.1  | about, [[./1-introduction.html][introduction]], [[./2.2-rectilinear_motion.html][rectilinear motion]] |
 |    2 | Oct.8  | [[./2.3-6-curvilinear_motion.html][curvilinear motion]]                      |
 |    3 | Oct.15 | [[./2.8-relative_motion.html][relative motion]], [[./2.9-constrained_motion.html][connected particles]]    |
+|    4 | Oct.22 | [[./3.3-4-rectilinear_kinetics.html][rectilinear kinetics]]                    |
 |      |        |                                         |
 
 * References
