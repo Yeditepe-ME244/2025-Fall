@@ -74,12 +74,30 @@ We talk about two types of motion, in general
 [[./meriam/prob_S3.5.png]]
 
 #+REVEAL: split
-Mass-pendulum assembly descending down from inclined plane
-
 #+ATTR_HTML: :width 700px
-[[./meriam/prob_3..png]]
+[[./meriam/prob_O3.10.jpg]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_O3.13.jpg]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_O3.31.jpg]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.32.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_O3.36.jpg]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.34.png]]
 
 * Review
-From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 2.9, Problems
+From [[https://oxvard.wordpress.com/wp-content/uploads/2018/05/engineering-mechanics-dynamics-7th-edition-j-l-meriam-l-g-kraige.pdf][the book]]: Section 3.1-4, Problems
 
-From Hibbeler, Engineering Mechanics: Dynamics: Chapter 12, 147, 153, 169, 175, 177, 179
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 13: 3, 7, 15, 20, 24, 25, 41, 42, 47
