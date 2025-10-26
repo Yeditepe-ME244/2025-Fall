@@ -17,9 +17,15 @@
 * Equations of Motion
 - Kinetics of particles moving in curved planar paths require careful consideration of the normal and tangential components, which can be resolved in any one of the below coordinates:
   + rectangular
-    \[ \sum_i \boldsymbol{F}_x = m\,\ddot{x} \, , \hspace{1em} \sum_i \boldsymbol{F}_y = m\,\ddot{y} \]
   + cylindrical
-    \[ \sum_i \boldsymbol{F}_r = m(\ddot{r} - r \dot{\theta}^2)\, , \hspace{1em} \sum_i \boldsymbol{F}_\theta = m(r\ddot{\theta} + 2\dot{r} \dot{\theta}) \]
+    
+#+REVEAL: split
+#+ATTR_HTML: :width 600px
+[[./meriam/figure_3.X.jpg]]
++ rectangular
+  \[ \sum_i \boldsymbol{F}_x = m\,\ddot{x} \, , \hspace{1em} \sum_i \boldsymbol{F}_y = m\,\ddot{y} \]
++ cylindrical
+  \[ \sum_i \boldsymbol{F}_r = m(\ddot{r} - r \dot{\theta}^2)\, , \hspace{1em} \sum_i \boldsymbol{F}_\theta = m(r\ddot{\theta} + 2\dot{r} \dot{\theta}) \]
 
 * Examples
 #+ATTR_HTML: :width 1600px
