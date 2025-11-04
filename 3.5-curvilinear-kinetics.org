@@ -21,7 +21,7 @@
     
 #+REVEAL: split
 #+ATTR_HTML: :width 600px
-[[./meriam/figure_3.X.jpg]]
+[[./sketch_3.1.jpg]]
 + rectangular
   \[ \sum_i \boldsymbol{F}_x = m\,\ddot{x} \, , \hspace{1em} \sum_i \boldsymbol{F}_y = m\,\ddot{y} \]
 + cylindrical

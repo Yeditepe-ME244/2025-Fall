@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of bodies/work and energy</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of bodies/work and energy</h2> <h3>Particle Kinetics</h3> <h4>2025-11-04</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org86565d1">1. Method of Work-Energy</a></li>
+<li><a href="#/slide-org79c8e21">2. Derivation of Kinetic Energy</a></li>
+<li><a href="#/slide-orgfe9e51b">3. Power and Efficiency</a></li>
+<li><a href="#/slide-orgc02fbf7">4. Examples</a></li>
+<li><a href="#/slide-orgb6fe8c9">5. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org86565d1">
+<h2 id="org86565d1"><span class="section-number-2">1.</span> Method of Work-Energy</h2>
+<ul>
+<li><p>
+cumulative effects of forces over
+</p>
+<ul>
+<li>a prescribed motion path</li>
+<li>a period of time</li>
+
+</ul>
+
+<p>
+can directly be imported into the equations of motion such that solution without the knowledge of acceleration will be possible.    
+</p></li>
+
+</ul>
+</section>
+<section id="slide-org086f8de">
+<h3 id="org086f8de"><span class="section-number-3">1.1.</span> Definition: Incremental Work of an External Force</h3>
+<ul>
+<li>External Forces
+<ul>
+<li>Active</li>
+<li>Reactive</li>
+
+</ul></li>
+<li>Incremental Work</li>
+
+</ul>
+<p>
+\[ \delta U = \boldsymbol{F} \cdot d\boldsymbol{r} \]
+</p>
+</section>
+<section id="slide-orgdc53eea">
+<h3 id="orgdc53eea"><span class="section-number-3">1.2.</span> System of Units</h3>
+<ul>
+<li>[force]*[displacement]</li>
+<li>N \(\cdot\) m = 1 J</li>
+<li>ft \(\cdot\) lb</li>
+
+</ul>
+</section>
+<section id="slide-org001f808">
+<h3 id="org001f808"><span class="section-number-3">1.3.</span> Work of a Force over a Path</h3>
+
+<div id="orgb9ea4c0" class="figure">
+<p><img src="./sketch_3.2.jpg" alt="sketch_3.2.jpg" width="800px" />
+</p>
+</div>
+
+<p>
+\[  U_{1-2} = \int_1^2 \boldsymbol{F} \cdot d\boldsymbol{r} \]
+</p>
+
+<ul>
+<li>straight path</li>
+<li>curved path</li>
+
+</ul>
+</section>
+<section id="slide-org44d64fd">
+<h3 id="org44d64fd"><span class="section-number-3">1.4.</span> Work done by Spring Force</h3>
+
+<div id="org936621a" class="figure">
+<p><img src="./sketch_3.3.jpg" alt="sketch_3.3.jpg" width="800px" />
+</p>
+</div>
+
+<p>
+\[  U_{1-2} = -\frac{1}{2} k (x_2^2 - x_1^2) \]
+</p>
+
+<p>
+This implies
+</p>
+<ul>
+<li>negative work while moving away</li>
+<li>positive work while moving towards</li>
+
+</ul>
+
+<p>
+the springs&rsquo; undeformed configuration.
+</p>
+</section>
+<section id="slide-orga8fdfe5">
+<h4 id="orga8fdfe5"><span class="section-number-4">1.4.1.</span> Elastic Potential</h4>
+<p>
+The elastic potential function will be used in the next section.
+\[ V^e = \frac{1}{2} k x^2 \]
+</p>
+
+<p>
+\(x\) is measured from the undeformed spring
+</p>
+</section>
+<section id="slide-org30e1f42">
+<h3 id="org30e1f42"><span class="section-number-3">1.5.</span> Work done by Gravity</h3>
+
+<div id="org7a9941a" class="figure">
+<p><img src="./sketch_3.4.jpg" alt="sketch_3.4.jpg" width="500px" />
+</p>
+</div>
+
+<p>
+\[  U_{1-2} = -mg(y_2 - y_1) \]
+</p>
+
+<p>
+gravity does
+</p>
+<ul>
+<li>negative work during ascent</li>
+<li>positive work during descent</li>
+
+</ul>
+
+<p>
+of the mass.
+</p>
+</section>
+<section id="slide-org05702a9">
+<h4 id="org05702a9"><span class="section-number-4">1.5.1.</span> Gravitational Potential</h4>
+<p>
+The gravitational potential function will be used in the next section.
+\[ V^g = mgh \]
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org79c8e21">
+<h2 id="org79c8e21"><span class="section-number-2">2.</span> Derivation of Kinetic Energy</h2>
+<p>
+\[ T = \frac{1}{2} mv^2 \]
+and
+\[ U_{1-2} = T_2 - T_1 \]
+</p>
+
+<p>
+The total work done by the resultant unbalanced force \(F\) in moving the mass from 1 to 2 equals the corresponding change in kinetic energy of the mass.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgfe9e51b">
+<h2 id="orgfe9e51b"><span class="section-number-2">3.</span> Power and Efficiency</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-org5b230fa">
+<h3 id="org5b230fa"><span class="section-number-3">3.1.</span> Power</h3>
+<p>
+\[ P = F \cdot v \]
+</p>
+</section>
+<section id="slide-orgbf51fcf">
+<h3 id="orgbf51fcf"><span class="section-number-3">3.2.</span> Efficiency</h3>
+
+<div id="org9c36c88" class="figure">
+<p><img src="./sketch_3.6.jpg" alt="sketch_3.6.jpg" width="500px" />
+</p>
+</div>
+
+<p>
+\[ \frac{P_{out}}{P_{in}} \]
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgc02fbf7">
+<h2 id="orgc02fbf7"><span class="section-number-2">4.</span> Examples</h2>
+
+<div id="org8a8842c" class="figure">
+<p><img src="./meriam/prob_S3.11.png" alt="prob_S3.11.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="org6754550" class="figure">
+<p><img src="./meriam/prob_S3.13.png" alt="prob_S3.13.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="org7e35915" class="figure">
+<p><img src="./meriam/prob_S3.14.png" alt="prob_S3.14.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="org1f26012" class="figure">
+<p><img src="./meriam/prob_3.115.png" alt="prob_3.115.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="orgb766606" class="figure">
+<p><img src="./meriam/prob_3.116.png" alt="prob_3.116.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="orgff56581" class="figure">
+<p><img src="./meriam/prob_3.117.png" alt="prob_3.117.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="org84a6f79" class="figure">
+<p><img src="./meriam/prob_3.118.png" alt="prob_3.118.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="orga737ba2" class="figure">
+<p><img src="./meriam/prob_3.125.png" alt="prob_3.125.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="orgbc73039" class="figure">
+<p><img src="./meriam/prob_3.126.png" alt="prob_3.126.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="org941fb41" class="figure">
+<p><img src="./meriam/prob_3.130.png" alt="prob_3.130.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgc02fbf7-split">
+
+<div id="orga3c378e" class="figure">
+<p><img src="./meriam/prob_3.132.png" alt="prob_3.132.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgb6fe8c9">
+<h2 id="orgb6fe8c9"><span class="section-number-2">5.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 14: 4, 6, 12, 15, 18, 19, 21, 25*, 28, 30, 35, 40, 41 
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
