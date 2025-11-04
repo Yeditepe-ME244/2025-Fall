@@ -1,4 +1,4 @@
-#+TITLE:  kinetics of bodies in rectilinear translation
+#+TITLE:  kinetics of masses in rectilinear translation
 #+AUTHOR: Fethi Okyar
 #+DATE: 2025-10-22
 #+SUBTITLE: Particle Kinetics

@@ -1,4 +1,4 @@
-#+TITLE:  kinetics of bodies/work and energy
+#+TITLE:  kinetics of masses/work and energy
 #+AUTHOR: Fethi Okyar
 #+DATE: 2025-11-04
 #+SUBTITLE: Particle Kinetics

@@ -1,4 +1,4 @@
-#+TITLE:  kinetics of particles in curvilinear motion
+#+TITLE:  kinetics of masses in curvilinear motion
 #+AUTHOR: Fethi Okyar
 #+DATE: 2025-10-26
 #+SUBTITLE: Particle Kinetics
