@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of masses/potential energy</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of masses/potential energy</h2> <h3>Particle Kinetics</h3> <h4>2025-11-05</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org198208a">1. Potential Functions</a></li>
+<li><a href="#/slide-orgf8c7c67">2. Conservative Force Fields</a></li>
+<li><a href="#/slide-org8842560">3. Examples</a></li>
+<li><a href="#/slide-orgf51903d">4. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org198208a">
+<h2 id="org198208a"><span class="section-number-2">1.</span> Potential Functions</h2>
+<ul>
+<li>they can be defined as the negative of the work, based only on the initial and final coordinates of the mass, independent of the motion path
+<ul>
+<li>due to spring forces</li>
+<li>due to gravitational attraction</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org9a031c5">
+<h3 id="org9a031c5"><span class="section-number-3">1.1.</span> Gravitational Potential</h3>
+<ul>
+<li>is a function of the location \(h\) along the axis of gravitational acceleration
+\[ V^g = mgh \]</li>
+<li>The change in potential energy in moving a mass \(m\) from \(h_1\) to \(h_2\)
+\[  \begin{aligned}
+  \Delta V^g &= V^g_2 - V^g_1\\
+   &= mg (h_2 - h_1) = mg \Delta h
+  \end{aligned}   \]
+is <i>negative</i> of the work done by the gravitational force on the mass.</li>
+
+</ul>
+</section>
+<section id="slide-orgabf1827">
+<h3 id="orgabf1827"><span class="section-number-3">1.2.</span> Elastic Potential</h3>
+<ul>
+<li>is a function of the spring&rsquo;s elastic displacement \(x\) from its&rsquo; undeformed configuration
+\[ V^e = \int_0^x kx\,dx = \frac{1}{2} k x^2 \]</li>
+<li>The change in elastic energy in moving a mass \(m\) relatice to the undeformed length from \(x_1\) to \(x_2\)
+\[  \begin{aligned}
+  \Delta V^e &= V^e_2 - V^e_1\\
+   &= \frac{1}{2} k (x_2^2 - x_1^2)
+  \end{aligned}   \]
+is <i>negative</i> of the work done by the spring force on the mass.</li>
+
+</ul>
+</section>
+<section id="slide-org71b162a">
+<h3 id="org71b162a"><span class="section-number-3">1.3.</span> Modified Work-Energy Equation</h3>
+<ul>
+<li>The work term \(U\) in 
+\[  U_{1-2} = T_2 - T_1 = \Delta T \]
+is modified to \(U'\) as
+\[ U'_{1-2} = \Delta T + \Delta V \]
+where \(\Delta V = \Delta V^g + \Delta V^e\) is the sum of potentials from gravity and all springs attached while \(U'\) stands for the work of all external forces <i><b>other than</b></i> gravity and spring forces.</li>
+<li>This equation can also be stated as
+\[ T_1 + V_1 + U'_{1-2} = T_2 + V_2 \]</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf8c7c67">
+<h2 id="orgf8c7c67"><span class="section-number-2">2.</span> Conservative Force Fields</h2>
+
+<div id="org78f0d97" class="figure">
+<p><img src="./sketch_3.7.jpg" alt="sketch_3.7.jpg" width="800px" />
+</p>
+</div>
+
+<ul>
+<li>A force is said to be <i>conservative</i> if the work done by it depends only on the initial and final coordinates (i.e. the work is <i>path-independent</i>).</li>
+
+<li>In this case, we assume (know) that a scalar force potential \(V=V(x,y,z)\) exists, such that the negative of its differential \(dV\) is equal to \(\boldsymbol{F}\cdot d\boldsymbol{r}\).</li>
+
+</ul>
+
+</section>
+<section id="slide-orgf8c7c67-split">
+<ul>
+<li>In this way, we conjecture that
+\[ U_{1-2} = \int_{V_1}^{V_2} -dV = -(V_2 - V_1) \]</li>
+
+<li>The differential \(dV\) can be evaluated by using the chain-rule of differentiation as
+\[ dV = \frac{\partial V}{\partial x} dx + \frac{\partial V}{\partial y} dy + \frac{\partial V}{\partial z} dz \]</li>
+
+</ul>
+
+</section>
+<section id="slide-orgf8c7c67-split">
+<p>
+But \(dV\) is also equivalent to
+  \[ F_x dx + F_y dy + F_z dz \]
+which implies that
+  \[ F_x = \frac{\partial V}{\partial x},\hspace{1em} F_y = \frac{\partial V}{\partial y},\hspace{1em} F_z = \frac{\partial V}{\partial z} \]
+</p>
+
+</section>
+<section id="slide-orgf8c7c67-split">
+<p>
+In vector form the relation between the force, \(\boldsymbol{F}\) and the force potential \(V\) can be expressed as
+\[ \boldsymbol{F} = - \nabla V \]
+where the symbol \(\nabla\) (reads &ldquo;nabla&rdquo;) is the <b>vector gradient</b> operator defines as
+\[ \nabla = \frac{\partial}{\partial x} \boldsymbol{i} +  \frac{\partial}{\partial y} \boldsymbol{j} + \frac{\partial}{\partial z} \boldsymbol{k} \]
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org8842560">
+<h2 id="org8842560"><span class="section-number-2">3.</span> Examples</h2>
+
+<div id="org5ee0f4d" class="figure">
+<p><img src="./meriam/prob_S3.16.png" alt="prob_S3.16.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="org28b6e2e" class="figure">
+<p><img src="./meriam/prob_S3.17.png" alt="prob_S3.17.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="orgdf8fcb6" class="figure">
+<p><img src="./meriam/prob_S3.18.png" alt="prob_S3.18.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="orgb0cf5c7" class="figure">
+<p><img src="./meriam/prob_3.171.png" alt="prob_3.171.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="orge51870e" class="figure">
+<p><img src="./meriam/prob_3.172.png" alt="prob_3.172.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="org1ee2db2" class="figure">
+<p><img src="./meriam/prob_3.159.png" alt="prob_3.159.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="org8bc7556" class="figure">
+<p><img src="./meriam/prob_3.154.png" alt="prob_3.154.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="org9b5052a" class="figure">
+<p><img src="./meriam/prob_3.151.png" alt="prob_3.151.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="orgb7f14ea" class="figure">
+<p><img src="./meriam/prob_3.156.png" alt="prob_3.156.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="org438c3a7" class="figure">
+<p><img src="./meriam/prob_3.162.png" alt="prob_3.162.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org8842560-split">
+
+<div id="orgd569b5b" class="figure">
+<p><img src="./meriam/prob_3.163.png" alt="prob_3.163.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf51903d">
+<h2 id="orgf51903d"><span class="section-number-2">4.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 14: 48, 49, 53, 58, 71, 72, 76, 78, 84, 92, 93
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
