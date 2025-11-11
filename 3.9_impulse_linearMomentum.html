@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of masses/impulse and linear momentum</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of masses/impulse and linear momentum</h2> <h3>Particle Kinetics</h3> <h4>2025-11-11</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org0610b73">1. Impulse</a></li>
+<li><a href="#/slide-org43e5b72">2. Linear Momentum</a></li>
+<li><a href="#/slide-org0d405a3">3. Examples</a></li>
+<li><a href="#/slide-org5b79c85">4. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org0610b73">
+<h2 id="org0610b73"><span class="section-number-2">1.</span> Impulse</h2>
+<ul>
+<li>Our study of work and energy allowed us to solve problems in dynamics by integrating the equation of motion over <b>the path</b>.</li>
+<li>This way, we were able to determine velocities without the need for integrating accelerations.</li>
+<li>Now we consider integrating the equation of motion <b>in time</b>.</li>
+
+</ul>
+</section>
+<section id="slide-org59ba882">
+<h3 id="org59ba882"><span class="section-number-3">1.1.</span> time integral of forces</h3>
+
+<div id="orgca67a87" class="figure">
+<p><img src="./photo_impulseBall.png" alt="photo_impulseBall.png" width="500px" />
+</p>
+</div>
+
+<p>
+The notion of impulse and impact may be related. 
+\[ \int_{t_1}^{t_2} \boldsymbol{F} dt \]
+</p>
+</section>
+<section id="slide-org17caa64">
+<h3 id="org17caa64"><span class="section-number-3">1.2.</span> temporal nature of force</h3>
+
+<div id="orge35ef73" class="figure">
+<p><img src="./sketch_3.9a.png" alt="sketch_3.9a.png" width="600px" />
+</p>
+</div>
+
+<p>
+The impulse period \(t_1-t_2\) may be very brief as in impact, or the force application may be occurring over repeated (or cyclic) periods, i.e. <i>periodic</i> excitation.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org43e5b72">
+<h2 id="org43e5b72"><span class="section-number-2">2.</span> Linear Momentum</h2>
+<p>
+The product of mass and velocity is called the linear momentum, \(\boldsymbol{G}\) where
+\[ \boldsymbol{G} = m \boldsymbol{v} \]
+</p>
+</section>
+<section id="slide-orgb26a0b8">
+<h3 id="orgb26a0b8"><span class="section-number-3">2.1.</span> equation of motion (revisited)</h3>
+<p>
+The equation of motion (for a single mass)
+\[ \sum_i \boldsymbol{F}_i = m \dot{\boldsymbol{v}} \]
+The right hand side can be generalized for variable mass as
+\[ \sum_i \boldsymbol{F}_i = \frac{d}{dt}(m \boldsymbol{v}) \]
+</p>
+</section>
+<section id="slide-org5da0e43">
+<h4 id="org5da0e43"><span class="section-number-4">2.1.1.</span> balance of linear momentum principle</h4>
+<p>
+The equation of motion reads
+\[ \sum_i \boldsymbol{F}_i = \dot{\boldsymbol{G}} \]
+</p>
+
+<p>
+The resultant unbalanced force acting on the mass equals its time rate of change of linear momentum.
+</p>
+</section>
+<section id="slide-org1c63156">
+<h4 id="org1c63156"><span class="section-number-4">2.1.2.</span> integrating the equation of motion <b>in time</b></h4>
+<p>
+The balance of linear momentum can be converted into a <i>differential expression</i>
+\[ \sum_i \boldsymbol{F}_i dt = d \boldsymbol{G} \]
+</p>
+
+</section>
+<section id="slide-org1c63156-split">
+<p>
+<b>form one</b><br />
+Integrating the differential expression we get
+\[ \int_{t_1}^{t_2} \sum_i \boldsymbol{F}_i dt = \int_{G_1}^{G_2} d (\boldsymbol{G}) = \boldsymbol{G}_2 -  \boldsymbol{G}_1 \]
+</p>
+
+</section>
+<section id="slide-org1c63156-split">
+<p>
+<b>form two</b><br />
+manipulating the equation by moving terms around, we get
+\[ \boldsymbol{G}_1 + \int_{t_1}^{t_2} \sum_i \boldsymbol{F}_i dt = \boldsymbol{G}_2 \]
+</p>
+</section>
+<section id="slide-org460d05d">
+<h4 id="org460d05d"><span class="section-number-4">2.1.3.</span> impulse-momentum diagram</h4>
+
+<div id="org9f12cb7" class="figure">
+<p><img src="./sketch_3.9b.png" alt="sketch_3.9b.png" width="1100px" />
+</p>
+</div>
+
+<p>
+The impulse-momentum equation provides as many terms as <b>the rank</b> of model space
+</p>
+</section>
+<section id="slide-orgb6ec702">
+<h4 id="orgb6ec702"><span class="section-number-4">2.1.4.</span> conservation of momentum</h4>
+<p>
+Here we state that
+</p>
+<blockquote >
+<p>
+if the resultant of forces in a particular direction (or as a whole) remains zero during a period, then the change in linear momentum within that period and particular direction (or as a whole) will be <b>zero</b>
+</p>
+</blockquote>
+</section>
+</section>
+<section>
+<section id="slide-org0d405a3">
+<h2 id="org0d405a3"><span class="section-number-2">3.</span> Examples</h2>
+
+<div id="org8edbd0e" class="figure">
+<p><img src="./meriam/prob_S3.19.png" alt="prob_S3.19.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0d405a3-split">
+
+<div id="orga64a56f" class="figure">
+<p><img src="./meriam/prob_S3.20.png" alt="prob_S3.20.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0d405a3-split">
+
+<div id="orgbb19587" class="figure">
+<p><img src="./meriam/prob_S3.21.png" alt="prob_S3.21.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0d405a3-split">
+
+<div id="orgf993b34" class="figure">
+<p><img src="./meriam/prob_S3.22.png" alt="prob_S3.22.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org0d405a3-split">
+
+<div id="orgb032c95" class="figure">
+<p><img src="./meriam/prob_S3.23.png" alt="prob_S3.23.png" width="1600px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org5b79c85">
+<h2 id="org5b79c85"><span class="section-number-2">4.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 6, 14, 18, 22, 28, 33, 39, 42, 43
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
