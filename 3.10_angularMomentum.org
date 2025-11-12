@@ -1,6 +1,6 @@
-#+TITLE:  kinetics of masses/impulse and linear momentum
+#+TITLE:  kinetics of masses/angular momentum
 #+AUTHOR: Fethi Okyar
-#+DATE: 2025-11-11
+#+DATE: 2025-11-12
 #+SUBTITLE: Particle Kinetics
 #+DESCRIPTION: 
 #+STARTUP: overview
@@ -14,11 +14,38 @@
 #+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
 #+HTML_HEAD_EXTRA: </style>
 
-* Impulse
-    
-** time integral of forces
+* Angular Motion
+Linear motion is insufficient in describing the dynamics of motion that involves *rotations* in addition to translations.\\
 
-** temporal nature of forces
+(PICTURE)\\
+
+EXAMPLE: A system of two masses connected by a rigid link rotating about the center of the link, zero linear momentum yet motion prevails.
+
+** a new vector type for a new notion
+As linear momentum runs short of the description of rotational motion, there is a need to introduce this type of motion with a new vector.\\
+
+(PICTURE)\\
+
+For that, an observation point $O$ is introduced about which rotational effects are described.
+\[ \boldsymbol{r} \times \boldsymbol{G} = \boldsymbol{H}^O \]
+
+(Note that the rotational vectors resulting from the cross product (e.g. rotation, moment, angular moment, etc.) have a different nature compared with ordinary (e.g. force) vectors. Their designation include a double-arrow.)
+
+** revisiting the cross-product operation
+The mathematics of the cross-product operation involves cyclic permutations of the argument vector components.\\
+ 
+\begin{align}
+\boldsymbol{H}^O =
+\left\{
+\begin{array}{l}
+H_x^O \\
+H_y^O \\
+H_z^O
+\end{array}
+\right\}
+\end{align}
+
+*** reminder: cross-product of a force about a point 
 
 * Linear Momentum
 

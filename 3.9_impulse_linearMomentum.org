@@ -94,5 +94,33 @@ if the resultant of forces in a particular direction (or as a whole) remains zer
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S3.23.png]]
 
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.179.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.185.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.191.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.193.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.195.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.198.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.209.png]]
+
 * Review
 From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 6, 14, 18, 22, 28, 33, 39, 42, 43
