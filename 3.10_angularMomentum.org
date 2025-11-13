@@ -135,4 +135,4 @@ In this case, the 6 degrees-of-freedoms (dofs) are reduced to 3.
 [[./meriam/prob_S3.27.png]]
 
 * Review
-From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15:
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 49, 62, 66, 69, 71, 72, 73, 76, 78, 81, 85, 90

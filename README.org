@@ -9,7 +9,6 @@
 #+REVEAL_EXTRA_CSS: ./mystyle.css
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 
-
 * Weekly outline
 #+REVEAL_HTML: <div style="font-size: 80%;">
 | Week | Date   | Topics                                  |
@@ -20,8 +19,8 @@
 |    4 | Oct.22 | [[./3.3-4-rectilinear_kinetics.html][rectilinear particle kinetics]]           |
 |    5 | Oct.30 | [[./3.5-curvilinear-kinetics.html][curvilinear particle kinetics]]           |
 |    6 | Nov.4  | [[./3.6-work_energy.html][method of work/energy]], [[./3.7-potential_energy.html][potential energy]] |
-|    7 | Nov.11 | [[./3.9_impulse_linearMomentum.html][impulse and momentum]], angular momentum  |
-|      |        |                                         |
+|    7 | Nov.11 | [[./3.9_impulse_linearMomentum.html][impulse and momentum]], [[./3.10_angularMomentum.html][angular momentum]]  |
+|    8 | Nov.18 |                                         |
 
 * References
 ** Computer Algebra System (maxima)
