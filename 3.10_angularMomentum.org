@@ -32,7 +32,7 @@ We can define two new quantities that appear on both sides of the equal sign.
 
 ** The Resultant Moment about $O$
 On the left of the angular equation of motion, the cross product of the position vector from $O$ with the resultant forces appeared. This is called as $\boldsymbol{M}^O$ as
-\[ \sum_i \boldsymbol{M}^O = \boldsymbol{r} \times \sum_i \boldsymbol{F}_i \]
+\[ \sum_i \boldsymbol{M}_i^O = \boldsymbol{r} \times \sum_i \boldsymbol{F}_i \]
 
 On the right side of the angular equation of motion is another story (following the next slide)
 
@@ -40,12 +40,12 @@ On the right side of the angular equation of motion is another story (following 
 The mathematics of the cross-product operation involves cyclic permutations of the argument vector components.\\
  
 \begin{align}
-\boldsymbol{M}^O =
+\boldsymbol{M}_i^O =
 \left\{
 \begin{array}{l}
-M_x^O \\
-M_y^O \\
-M_z^O
+M_ix^O \\
+M_iy^O \\
+M_iz^O
 \end{array}
 \right\} = \ldots
 \end{align}
@@ -68,7 +68,7 @@ But as $\dot{\boldsymbol{r}}=\boldsymbol{v}$ is parallel to $\boldsymbol{G}$, th
 
 * The Balance of Angular Momentum Principle
 Now the angular equation of motion can be restated in terms of the newly defined notions as
-\[ \sum_i \boldsymbol{M}^O = \dot{\boldsymbol{H}^O} \]
+\[ \sum_i \boldsymbol{M}_i^O = \dot{\boldsymbol{H}^O} \]
 
 which reads
 #+BEGIN_QUOTE
@@ -81,17 +81,17 @@ The vector equation can be decomposed into it's scalar components.
 The above expression can be integrated in time to obtain the angular impulse-momentum relation which will be practical to solve simple problems in dynamics.\\
 
 Before integration we need to express the balance of angular moment principle in its differential form as
-\[ \sum_i \boldsymbol{M}^O dt = d \boldsymbol{H}^O \]
+\[ \sum_i \boldsymbol{M}_i^O dt = d \boldsymbol{H}^O \]
 
 #+REVEAL: split
 *form one*\\
 Integrating the equations of motion from time $t_1$ to time $t_2$, we have
-\[ \int_{t_1}^{t_2} \sum_i \boldsymbol{M}^O dt = (\boldsymbol{H}^O)_2 - (\boldsymbol{H}^O)_1 \]
+\[ \int_{t_1}^{t_2} \sum_i \boldsymbol{M}_i^O dt = (\boldsymbol{H}^O)_2 - (\boldsymbol{H}^O)_1 \]
 
 #+REVEAL: split
 *form two*\\
 Form One can also be rewritten as
-\[  (\boldsymbol{H}^O)_1 + \int_{t_1}^{t_2} \sum_i \boldsymbol{M}^O dt = (\boldsymbol{H}^O)_2 \]
+\[  (\boldsymbol{H}^O)_1 + \int_{t_1}^{t_2} \sum_i \boldsymbol{M}_i^O dt = (\boldsymbol{H}^O)_2 \]
 
 which reads
 #+BEGIN_QUOTE
@@ -115,7 +115,7 @@ In this case, the 6 degrees-of-freedoms (dofs) are reduced to 3.
 ** consequence of reduction in model space
 - we can write two equations of motion in plane ($x$ and $y$)
 - we can write one angular equation of motion out of plane ($z$)
-  \[  (H_z^O)_1 + \int_{t_1}^{t_2} \sum_i M_z^O dt = (H_z^O)_2 \]
+  \[  (H_z^O)_1 + \int_{t_1}^{t_2} \sum_i M_iz^O dt = (H_z^O)_2 \]
 - the rest of equations (translation along $z$ and rotation about $x$ and $y$) become equations of equilibrium.
 
 * Examples
@@ -133,6 +133,38 @@ In this case, the 6 degrees-of-freedoms (dofs) are reduced to 3.
 #+REVEAL: split
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S3.27.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.220.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.225.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.226.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.227.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.228.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.230.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.235.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.236.png]]
 
 * Review
 From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 49, 62, 66, 69, 71, 72, 73, 76, 78, 81, 85, 90
