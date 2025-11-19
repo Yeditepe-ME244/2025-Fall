@@ -14,7 +14,7 @@
 #+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
 #+HTML_HEAD_EXTRA: </style>
 
-* Impulse
+* Impact
 Colliding bodies with a relatively large contact force over a very brief interval of time.
 
 The impact process:
@@ -45,7 +45,7 @@ The two equations required are obtained from
 
 *** Coefficient of Restitution, $e$
 This is a measure of the energy loss during impact between the deformation and rebound phases.
-\[ e = \frac{\mathrm{impulse_{rebound}}}{\mathrm{impulse_{deform}}} = \frac{\int_0^{t_p} F_r dt}{\int_{t_p}^T F_d dt} \]
+\[ e = \frac{\mathrm{impulse_{rebound}}}{\mathrm{impulse_{deform}}} = \frac{\int_{t_p}^T F_r dt}{\int_0^{t_p} F_d dt} \]
 
 [free-hand sketch of the impact phases with an adjacent time-force diagram]
 
@@ -90,11 +90,29 @@ The four equations that can be used to solve these are
 
 * Examples
 #+ATTR_HTML: :width 1600px
-[[./meriam/prob_S3.19.png]]
+[[./meriam/prob_S3.28.png]]
+
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.29.png]]
+
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.30.png]]
 
 #+REVEAL: split
 #+ATTR_HTML: :width 700px
-[[./meriam/prob_3.209.png]]
+[[./meriam/prob_3.248.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.251.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.260.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.262.png]]
 
 * Review
 From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
