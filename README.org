@@ -20,7 +20,7 @@
 |    5 | Oct.30 | [[./3.5-curvilinear-kinetics.html][curvilinear particle kinetics]]           |
 |    6 | Nov.4  | [[./3.6-work_energy.html][method of work/energy]], [[./3.7-potential_energy.html][potential energy]] |
 |    7 | Nov.11 | [[./3.9_impulse_linearMomentum.html][impulse and momentum]], [[./3.10_angularMomentum.html][angular momentum]]  |
-|    8 | Nov.18 |                                         |
+|    8 | Nov.18 | [[./3.12_impact.html][impact]]                                  |
 
 * References
 ** Computer Algebra System (maxima)
