@@ -92,9 +92,11 @@ The four equations that can be used to solve these are
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S3.28.png]]
 
+#+REVEAL: split
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S3.29.png]]
 
+#+REVEAL: split
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S3.30.png]]
 
