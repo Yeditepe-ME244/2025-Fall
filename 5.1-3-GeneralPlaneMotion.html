@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of bodies/general plane motion</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of bodies/general plane motion</h2> <h3>Rigid-Body Kinematics</h3> <h4>2025-11-22</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org6016b91">1. Body vs. Particle</a></li>
+<li><a href="#/slide-org5f20029">2. Kinematic Relations</a></li>
+<li><a href="#/slide-orgd0fc2ba">3. Absolute Motion Formulation</a></li>
+<li><a href="#/slide-org769b6d6">4. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org6016b91">
+<h2 id="org6016b91"><span class="section-number-2">1.</span> Body vs. Particle</h2>
+<p>
+When does the physical shape of a body become irrelevant to its motion?
+</p>
+
+
+<div id="org0924b12" class="figure">
+<p><img src="./sketch_5.1a.jpg" alt="sketch_5.1a.jpg" width="600px" />
+</p>
+</div>
+
+<p>
+the size and shape does not matter so long as we use the mass center to characterize the location of the mass
+</p>
+
+</section>
+<section id="slide-org6016b91-split">
+<p>
+force equilibrium rules while the moment of forces are identically satistifed.
+</p>
+<div>
+\begin{align}
+ \sum_i \boldsymbol{F}_i &= \boldsymbol{F}^R \\
+ \sum_i \boldsymbol{r}_Oi \times \boldsymbol{F}_i &= \boldsymbol{M}^R_O = 0
+\end{align}
+
+</div>
+
+</section>
+<section id="slide-org6016b91-split">
+<p>
+But when the body becomes the major actor in the theater, it accepts forces that are not necessarily concurrent at its center of mass, then
+</p>
+
+
+<div id="orge28a3b7" class="figure">
+<p><img src="./sketch_5.1b.jpg" alt="sketch_5.1b.jpg" width="900px" />
+</p>
+</div>
+
+<p>
+the force equilibrium ceases to be sufficient for motionlessness (the object rotates)
+</p>
+</section>
+<section id="slide-org0a94f7c">
+<h3 id="org0a94f7c"><span class="section-number-3">1.1.</span> Rigid Body</h3>
+<p>
+A body is said to be <b>rigid</b> when it is incapable of deforming.
+</p>
+
+<p>
+[freehand depiction of a spinning top with a T-bar attached to the center of its basal face]
+</p>
+
+<ul>
+<li>what is a center of rotation?</li>
+<li>relative rotation of the T-bar about the longitudinal axis of the top</li>
+
+</ul>
+
+</section>
+<section id="slide-org0a94f7c-split">
+<p>
+The motion portrayed by the top is considered as general spatial (3-D). The spatial motion of a rigid body can be resolved by 6 degrees-of-freedom (DOF).
+</p>
+
+<p>
+In this course we consider mechanical systems that exhibit planar motion only!
+</p>
+<ul>
+<li>rotation about the plane normal (1 DOF)</li>
+<li>translations in plane (2 DOFs)</li>
+<li>the 6 DOFs of spatial motion are reduced to 3 DOFs in planar motion</li>
+
+</ul>
+
+</section>
+<section id="slide-org0a94f7c-split">
+
+<div id="orge3c7177" class="figure">
+<p><img src="./meriam/figure_5.1.png" alt="figure_5.1.png" width="900px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org5f20029">
+<h2 id="org5f20029"><span class="section-number-2">2.</span> Kinematic Relations</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-org70d391f">
+<h3 id="org70d391f"><span class="section-number-3">2.1.</span> Linear Kinematics</h3>
+<p>
+The relations between distance, velocity and acceleration along the translation path has already been covered: \(s\) is the path variable, \(v = \dot{s}\) is the velocity (tangent to the path), and \(a_t = \dot{v} = \ddot{s}\) is the tangential acceleration. Remember the differential relation \(a_t ds = v\,dv\).
+</p>
+</section>
+<section id="slide-orgc04b94c">
+<h3 id="orgc04b94c"><span class="section-number-3">2.2.</span> Angular Kinematics</h3>
+<p>
+The rotation is measured from any line segment relative to a fixed reference axis by the angle from the fixed axis to the line segment, \(\theta\). 
+</p>
+
+<div id="orgb14e5c4" class="figure">
+<p><img src="./meriam/figure_5.2.png" alt="figure_5.2.png" width="400px" />
+</p>
+</div>
+
+<p>
+Note that, the rotations of two line segments may be measured as \(\theta_1\) and \(\theta_2\) which are related by a fixed angle \(\beta\) (which shall never change during the process due to the rigid nature of the body).
+</p>
+
+<p>
+Thus,
+</p>
+<div>
+\begin{align}
+ \theta_2 &= \theta_1 + \beta \\
+ \dot{\theta}_2 &= \dot{\theta}_1 \\
+ \ddot{\theta}_2 &= \ddot{\theta}_1
+\end{align}
+
+</div>
+
+</section>
+<section id="slide-orgc04b94c-split">
+<p>
+Furthermore, the relations between angle, angular velocity and angular acceleration can be defined as
+</p>
+<div>
+\begin{align}
+\omega &= \frac{d\theta}{dt} = \dot{\theta} \\
+\alpha &= \frac{d\omega}{dt} = \dot{\omega} \\
+\omega\, d\omega &= \alpha\, d\theta
+\end{align}
+
+</div>
+
+</section>
+<section id="slide-orgc04b94c-split">
+<p>
+The case of constant angular acceleration can be simply integrated as:
+</p>
+<div>
+\begin{align}
+\omega &= \omega_0 + \alpha t\\
+\omega^2 &= \omega_0^2 + 2\alpha (\theta-\theta_0)\\
+\theta &= \theta_0 + \omega t + \frac{1}{2} \alpha t^2
+\end{align}
+
+</div>
+</section>
+<section id="slide-org4cefe8f">
+<h3 id="org4cefe8f"><span class="section-number-3">2.3.</span> Rotation about a Fixed Axis</h3>
+
+<div id="org39a96fa" class="figure">
+<p><img src="./meriam/figure_5.3.png" alt="figure_5.3.png" width="500px" />
+</p>
+</div>
+
+<div>
+\begin{align}
+ v &= r\omega \\
+ a_n &= r\omega^2 = v^2/r \\
+ a_t &= r\alpha
+\end{align}
+
+</div>
+</section>
+<section id="slide-org21cad44">
+<h4 id="org21cad44"><span class="section-number-4">2.3.1.</span> Rotation as a Vector Operation</h4>
+<p>
+When the plane of motion is identified with its normal \(\boldsymbol{n}\) in a 3-D domain:
+</p>
+
+<div id="org311528f" class="figure">
+<p><img src="./meriam/figure_5.4.png" alt="figure_5.4.png" width="900px" />
+</p>
+</div>
+
+<div>
+\begin{align}
+ \boldsymbol{v} &= \omega \boldsymbol{n} \times \boldsymbol{r} \\
+ \boldsymbol{\alpha}_n &= \omega \boldsymbol{n} \times \boldsymbol{v} \\
+ \boldsymbol{\alpha}_t &= \alpha \boldsymbol{n} \times \boldsymbol{r}
+\end{align}
+
+</div>
+</section>
+<section id="slide-org878c791">
+<h3 id="org878c791"><span class="section-number-3">2.4.</span> Examples</h3>
+
+<div id="orga7030f6" class="figure">
+<p><img src="./meriam/prob_S5.2.png" alt="prob_S5.2.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org878c791-split">
+
+<div id="org88a4ba3" class="figure">
+<p><img src="./meriam/prob_S5.3.png" alt="prob_S5.3.png" width="1600px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgd0fc2ba">
+<h2 id="orgd0fc2ba"><span class="section-number-2">3.</span> Absolute Motion Formulation</h2>
+<p>
+In general there are two ways to deal with dynamics of rigid bodies
+</p>
+<ul>
+<li>Absolute Motion</li>
+<li>Relative Motion</li>
+
+</ul>
+
+<p>
+In absolute motion formulation the <b>geometric relations</b> between problem variables are formed and then their <b>time derivatives</b> are taken.
+</p>
+
+<p>
+If the geometric relations turn out to be overly complex than it may be preferable to turn to the relative formulation.
+</p>
+</section>
+<section id="slide-orge137867">
+<h3 id="orge137867"><span class="section-number-3">3.1.</span> Examples</h3>
+
+<div id="orga75711e" class="figure">
+<p><img src="./meriam/prob_S5.4.png" alt="prob_S5.4.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge137867-split">
+
+<div id="org56f585b" class="figure">
+<p><img src="./meriam/prob_S5.5.png" alt="prob_S5.5.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge137867-split">
+
+<div id="orgd3b6347" class="figure">
+<p><img src="./meriam/prob_S5.6.png" alt="prob_S5.6.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge137867-split">
+
+<div id="org7786642" class="figure">
+<p><img src="./meriam/prob_5.1.png" alt="prob_5.1.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org769b6d6">
+<h2 id="org769b6d6"><span class="section-number-2">4.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

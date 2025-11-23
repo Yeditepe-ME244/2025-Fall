@@ -1,0 +1,95 @@
+#+TITLE:  kinetics of bodies/general plane motion
+#+AUTHOR: Fethi Okyar
+#+DATE: 2025-11-22
+#+SUBTITLE: Rigid-Body Kinematics
+#+DESCRIPTION: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2> <h3>%s</h3> <h4>%d</h4>
+#+OPTIONS: timestamp:nil toc:1 num:t
+#+REVEAL_EXTRA_CSS: ../style.css
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+#+HTML_HEAD_EXTRA: </style>
+
+* Body vs. Particle
+When does the physical shape of a body become irrelevant to its motion?
+
+#+ATTR_HTML: :width 600px
+[[./sketch_5.1a.jpg]]
+
+the size and shape does not matter so long as we use the mass center to characterize the location of the mass
+
+#+REVEAL: split
+force equilibrium rules while the moment of forces are identically satistifed.
+\begin{align}
+ \sum_i \boldsymbol{F}_i &= \boldsymbol{F}^R \\
+ \sum_i \boldsymbol{r}_Oi \times \boldsymbol{F}_i &= \boldsymbol{M}^R_O = 0
+\end{align}
+
+#+REVEAL:split
+But when the body becomes the major actor in the theater, it accepts forces that are not necessarily concurrent at its center of mass, then
+
+#+ATTR_HTML: :width 900px
+[[./sketch_5.1b.jpg]]
+
+the force equilibrium ceases to be sufficient for motionlessness (the object rotates)
+
+** Rigid Body
+A body is said to be *rigid* when it is incapable of deforming.
+
+[freehand depiction of a spinning top with a T-bar attached to the center of its basal face]
+
+- what is a center of rotation?
+- relative rotation of the T-bar about the longitudinal axis of the top
+
+#+REVEAL: split
+The motion portrayed by the top is considered as general spatial (3-D). The spatial motion of a rigid body can be resolved by 6 degrees-of-freedom (DOF).
+
+In this course we consider mechanical systems that exhibit planar motion only!
+- rotation about the plane normal (1 DOF)
+- translations in plane (2 DOFs)
+- the 6 DOFs of spatial motion are reduced to 3 DOFs in planar motion
+
+#+REVEAL: split
+#+ATTR_HTML: :width 900px
+[[./meriam/figure_5.1.png]]
+
+#+REVEAL: split
+The relations between distance, velocity and acceleration along the translation path has already been covered: $s$ is the path variable, $v = \dot{s}$ is the velocity (tangent to the path), and $a_t = \dot{v} = \ddot{s}$ is the tangential acceleration. Remember the differential relation $a_t ds = v\,dv$.
+
+#+REVEAL:split
+The rotation is measured from any line segment relative to a fixed reference axis by the angle from the fixed axis to the line segment, $\theta$. 
+#+ATTR_HTML: :width 400px
+[[./meriam/figure_5.2.png]]
+
+Note that, the rotations of two line segments may be measured as $\theta_1$ and $\theta_2$ which are related by a fixed angle $\beta$ (which shall never change during the process due to the rigi nature of the body).
+
+Thus,
+\begin{align}
+ \theta_2 &= \theta_1 + \beta \\
+ \dot{\theta}_2 &= \dot{\theta}_1 \\
+ \ddot{\theta}_2 &= \ddot{\theta}_1
+\end{align}
+
+
+* Examples
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S3.32.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.301.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.307.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_3.311.png]]
+
+* Review
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
