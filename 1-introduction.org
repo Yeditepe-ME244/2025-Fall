@@ -16,13 +16,13 @@
 
 * History
 #+ATTR_REVEAL: :frag (appear)
-- Galilei
-- Huygens, the watch
-- Newton
-- Euler
-- D'Alembert
-- Lagrange
-- ...
+- Galilei (1564–1642)), observations of bodies in motion
+- Huygens (1629–1695), the watch
+- Newton (1643–1727), /Principia/ "laws of motion" for particles
+- Euler (1707–1783), ``equations of motion" for bodies
+- D'Alembert (1717–1783), "principle of virtual work"
+- Lagrange (1736–1813), "analytical mechanics"
+- Einstein (1879-1955), "principle of relativity"
 
 * Basic Concepts
 #+ATTR_REVEAL: :frag (appear)
@@ -32,15 +32,16 @@
 - Force
 ** Dimensions and Units
 #+ATTR_REVEAL: :frag (appear)
-- L
-- T
-- M
-- F
+- L, length
+- T, time
+- M, mass
+- F, force
 ** Dimensional Analysis
 physical laws/relations must be dimensionally homogeneous
 * Gravitation
 #+ATTR_REVEAL: :frag (appear)
 - gravitational constant, $G$
+  \[ F = G \frac{m_1 m_2}{r^2} \]
 - gravitational acceleration w.r.t. the earth, $\boldsymbol{g}$
 
 ** Question
