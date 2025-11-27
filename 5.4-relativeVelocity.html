@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of bodies/relative velocity</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of bodies/relative velocity</h2> <h3>Rigid-Body Kinematics</h3> <h4>2025-11-22</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-orgd110552">1. Relative Velocity</a></li>
+<li><a href="#/slide-org651c51d">2. Examples</a></li>
+<li><a href="#/slide-org3154fc1">3. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-orgd110552">
+<h2 id="orgd110552"><span class="section-number-2">1.</span> Relative Velocity</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org4b34912">
+<h3 id="org4b34912"><span class="section-number-3">1.1.</span> Between Two Point Masses</h3>
+<p>
+Remember the relative velocity expression for two point masses, each moving at its own with \(\boldsymbol{v}^a\) and \(\boldsymbol{v}^b\), separated by the position vector \(\boldsymbol{r}^{b/a}\)
+</p>
+
+<p>
+[a freehand depiction of the operation stage]
+</p>
+
+<p>
+Relative velocity signifies the difference between the velocities of the point masses
+\(\boldsymbol{v}^{b/a} = \boldsymbol{v}^b - \boldsymbol{v}^a\) which is sometimes just referred to as \(\boldsymbol{v}^{rel}\).
+</p>
+</section>
+<section id="slide-orgdebe560">
+<h4 id="orgdebe560"><span class="section-number-4">1.1.1.</span> Parallel and Perpendicular Components</h4>
+<p>
+The relative velocity between two point masses can be split into its components parallel to (\(\parallel\)) and perpendicular to (\(\perp\)) the axis that joins them. These can be written as \(\boldsymbol{v}^{rel}_\parallel\) and \(\boldsymbol{v}^{rel}_\perp\)
+</p>
+
+<p>
+Note that \(\boldsymbol{v}^{rel}_\parallel\) indicates the increase/decrease of distance between the two points, while \(\boldsymbol{v}^{rel}_\perp\) indicated the relative rotation of one point about the other, from which we can induce \(\boldsymbol{v}^{rel}_\perp = \boldsymbol{\omega} \times \boldsymbol{r}\) to determine the angular velocity vector.
+</p>
+</section>
+<section id="slide-org625d481">
+<h3 id="org625d481"><span class="section-number-3">1.2.</span> Between Two Points of a Body</h3>
+<p>
+For two points on the same rigid body the expression of relative motion becomes slightly simplified as the distance between them never changes, in other words \(\boldsymbol{v}^{rel}_\parallel=0\), <b>always</b>.
+</p>
+
+<p>
+Thus, it is always true that
+\[ \boldsymbol{v}^{rel} = \boldsymbol{v}^{rel}_\perp \]
+</p>
+
+<p>
+[freehand depicting of observer sitting on the top of the body of an airliner at point \(A\), and as the airlines goes through roll, yaw and pitch motions, other points around him seem to be rotating in certain directions but not moving away or towards him]
+</p>
+
+</section>
+<section id="slide-org625d481-split">
+<p>
+This means that it will always be true for two points on the same rigid body that their relative motion can be expressed in terms of pure rotation
+</p>
+
+<p>
+\[ \boldsymbol{v}^b = \boldsymbol{v}^a  + \boldsymbol{\omega} \times \boldsymbol{r}^{b/a} \]
+</p>
+
+<p>
+or inversely
+</p>
+
+<p>
+\[ \boldsymbol{v}^a = \boldsymbol{v}^b  + \boldsymbol{\omega} \times \boldsymbol{r}^{a/b} \]
+</p>
+
+</section>
+<section id="slide-org625d481-split">
+<p>
+Problems expressed in terms of relative motion can be solved directly by using the vector equation, or in terms of its scalar components. In many cases, a graphical approach is also known to work (graphical velocity analysis)
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org651c51d">
+<h2 id="org651c51d"><span class="section-number-2">2.</span> Examples</h2>
+
+<div id="org1a4cbaa" class="figure">
+<p><img src="./meriam/prob_S5.7.png" alt="prob_S5.7.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org651c51d-split">
+
+<div id="org7e02f92" class="figure">
+<p><img src="./meriam/prob_S5.8.png" alt="prob_S5.8.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org651c51d-split">
+
+<div id="org37e3806" class="figure">
+<p><img src="./meriam/prob_S5.9.png" alt="prob_S5.9.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org651c51d-split">
+
+<div id="org292e5c0" class="figure">
+<p><img src="./meriam/prob_S5.10.png" alt="prob_S5.10.png" width="1600px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3154fc1">
+<h2 id="org3154fc1"><span class="section-number-2">3.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
