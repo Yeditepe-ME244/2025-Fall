@@ -64,5 +64,36 @@ Problems expressed in terms of relative motion can be solved directly by using t
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S5.10.png]]
 
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.67.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.75.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.77.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.78.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.81.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.85.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.86.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.88.png]]
 * Review
-From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 16: 8, 12, 17, 18, 23, 30*, 36,  37, 43, 45, 48, 49, 52

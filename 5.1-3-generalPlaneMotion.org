@@ -143,7 +143,31 @@ If the geometric relations turn out to be overly complex than it may be preferab
 
 #+REVEAL: split
 #+ATTR_HTML: :width 700px
-[[./meriam/prob_5.1.png]]
+[[./meriam/prob_5.31.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.33.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.37.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.39.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.48.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.50.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.54.png]]
 
 * Review
 From Hibbeler, Engineering Mechanics: Dynamics: Chapter 15: 
