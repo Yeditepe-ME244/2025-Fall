@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics of bodies/relative acceleration</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics of bodies/relative acceleration</h2> <h3>Rigid-Body Kinematics</h3> <h4>2025-11-30</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-orgf1cfb08">1. Relative Acceleration (on Inertial Frames)</a></li>
+<li><a href="#/slide-orga206af3">2. Relative Acceleration (on non-Inertial Frames)</a></li>
+<li><a href="#/slide-org48c436b">3. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-orgf1cfb08">
+<h2 id="orgf1cfb08"><span class="section-number-2">1.</span> Relative Acceleration (on Inertial Frames)</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org287e546">
+<h3 id="org287e546"><span class="section-number-3">1.1.</span> Derivative of Velocity</h3>
+<p>
+Starting with the relative velocity relation between two points \(P\) and \(Q\) on a rigid body
+\[ \boldsymbol{v}^p = \boldsymbol{v}^q  + \boldsymbol{v}^{p/q} \]
+</p>
+
+<p>
+we differentiate this with respect to time, giving
+\[ \frac{d\boldsymbol{v}^p}{dt} = \frac{d\boldsymbol{v}^q}{dt}  + \frac{d\boldsymbol{v}^{p/q}}{dt} \]
+</p>
+
+<p>
+where
+\[ \boldsymbol{v}^{p/q} = \boldsymbol{\omega} \times \boldsymbol{r}^{p/q} \]
+</p>
+
+<p>
+This is known as the &ldquo;the relative acceleration relation&rdquo;.
+</p>
+</section>
+<section id="slide-orgcfa4db9">
+<h4 id="orgcfa4db9"><span class="section-number-4">1.1.1.</span> the &ldquo;dot&rdquo; notation</h4>
+<p>
+In the dot notation the relative acceleration relation becomes
+\[ \dot{\boldsymbol{v}}^p = \dot{\boldsymbol{v}}^q  + \dot{\boldsymbol{v}}^{p/q} \]
+</p>
+
+<p>
+where time derivative of velocity is replaced with acceleration as
+\[ \boldsymbol{a}^p = \boldsymbol{a}^q  + \dot{\boldsymbol{v}}^{p/q} \]
+</p>
+
+<p>
+The time derivative of the relative velocity term is expanded
+\[ \dot{\boldsymbol{v}}^{p/q} = \dot{\boldsymbol{\omega}} \times \boldsymbol{r}^{p/q} + \boldsymbol{\omega} \times \dot{\boldsymbol{r}}^{p/q} \]
+</p>
+
+<p>
+but \(\dot{\boldsymbol{r}}^{p/q} = \boldsymbol{v}^{p/q} = \boldsymbol{\omega} \times \boldsymbol{r}^{p/q}\), then
+</p>
+
+<p>
+\[ \dot{\boldsymbol{v}}^{p/q} = \boldsymbol{\alpha} \times \boldsymbol{r}^{p/q} + \boldsymbol{\omega} \times \boldsymbol{\omega} \times \boldsymbol{r}^{p/q} \]
+</p>
+
+<p>
+where \(\boldsymbol{\alpha} = \dot{\boldsymbol{\omega}}\) represents the angular acceleration vector.
+</p>
+</section>
+<section id="slide-org2e1ac95">
+<h4 id="org2e1ac95"><span class="section-number-4">1.1.2.</span> the relative acceleration relation (on inertial frames)</h4>
+<p>
+Substituting the derived terms we get
+\[ \boldsymbol{a}^p = \boldsymbol{a}^q  + \boldsymbol{\alpha} \times \boldsymbol{r}^{p/q} + \boldsymbol{\omega} \times \boldsymbol{\omega} \times \boldsymbol{r}^{p/q} \]
+</p>
+
+<p>
+This expression is slightly more complicated relative to it&rsquo;s velocity counterpart, but is managable (compared with the expression that will arise from using non-inertial frames).
+</p>
+</section>
+<section id="slide-org926f6ae">
+<h3 id="org926f6ae"><span class="section-number-3">1.2.</span> Examples</h3>
+
+<div id="org8c4cc40" class="figure">
+<p><img src="./meriam/prob_S5.13.png" alt="prob_S5.13.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org080b223" class="figure">
+<p><img src="./meriam/prob_S5.14.png" alt="prob_S5.14.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org45acf92" class="figure">
+<p><img src="./meriam/prob_S5.15.png" alt="prob_S5.15.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org2950bc3" class="figure">
+<p><img src="./meriam/prob_5.121.png" alt="prob_5.121.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org66db3c6" class="figure">
+<p><img src="./meriam/prob_5.127.png" alt="prob_5.127.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org8a670e7" class="figure">
+<p><img src="./meriam/prob_5.134.png" alt="prob_5.134.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="orgad7c498" class="figure">
+<p><img src="./meriam/prob_5.137.png" alt="prob_5.137.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org980a30d" class="figure">
+<p><img src="./meriam/prob_5.144.png" alt="prob_5.144.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org2bbb9a8" class="figure">
+<p><img src="./meriam/prob_5.147.png" alt="prob_5.147.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org92b1fe9" class="figure">
+<p><img src="./meriam/prob_5.151.png" alt="prob_5.151.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org926f6ae-split">
+
+<div id="org9c658bc" class="figure">
+<p><img src="./meriam/prob_5.153.png" alt="prob_5.153.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orga206af3">
+<h2 id="orga206af3"><span class="section-number-2">2.</span> Relative Acceleration (on non-Inertial Frames)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-org9520008">
+<h3 id="org9520008"><span class="section-number-3">2.1.</span> Examples</h3>
+
+<div id="org64aa436" class="figure">
+<p><img src="./meriam/prob_S5.16.png" alt="prob_S5.16.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9520008-split">
+
+<div id="orgdbea10a" class="figure">
+<p><img src="./meriam/prob_S5.17.png" alt="prob_S5.17.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9520008-split">
+
+<div id="org4e23f8a" class="figure">
+<p><img src="./meriam/prob_5.165.png" alt="prob_5.165.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org48c436b">
+<h2 id="org48c436b"><span class="section-number-2">3.</span> Review</h2>
+<p>
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 16:
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

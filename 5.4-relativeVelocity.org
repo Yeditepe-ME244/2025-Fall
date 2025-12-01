@@ -1,6 +1,6 @@
 #+TITLE:  kinetics of bodies/relative velocity
 #+AUTHOR: Fethi Okyar
-#+DATE: 2025-11-22
+#+DATE: 2025-11-30
 #+SUBTITLE: Rigid-Body Kinematics
 #+DESCRIPTION: 
 #+STARTUP: overview
@@ -48,7 +48,7 @@ or inversely
 #+REVEAL: split
 Problems expressed in terms of relative motion can be solved directly by using the vector equation, or in terms of its scalar components. In many cases, a graphical approach is also known to work (graphical velocity analysis)
 
-* Examples
+** Examples
 #+ATTR_HTML: :width 1600px
 [[./meriam/prob_S5.7.png]]
 
@@ -95,5 +95,68 @@ Problems expressed in terms of relative motion can be solved directly by using t
 #+REVEAL: split
 #+ATTR_HTML: :width 700px
 [[./meriam/prob_5.88.png]]
+* Instantaneous Center of Rotation (ICR)
+The velocities of two points $A$ and $B$ on a rigid body are related by
+\[ \boldsymbol{v}^b = \boldsymbol{v}^a + \boldsymbol{v}^{b/a} \]
+where $\boldsymbol{v}^{b/a} = \boldsymbol{\omega} \times \boldsymbol{r}^{b/a}$.
+
+[freehand depiction of a body with two of its points labeled and their velocity arrows assigned. Location of the instantaneous centre $C$ is shown by intersecting lines perpendicular to velocities.]
+
+The velocity of any point can be expressed with respect to the instantaneous centre as
+\begin{align}
+ \boldsymbol{v}^{a} &=  \boldsymbol{\omega} \times \boldsymbol{r}^{a/c} \\
+ \boldsymbol{v}^{b} &=  \boldsymbol{\omega} \times \boldsymbol{r}^{b/c}
+\end{align}
+
+#+REVEAL: split
+- The ICR may or may not be physically located on the body.
+- The ICR is not necessarily a "fixed point" in space.
+
+Examples:
+- the case of a propeller
+- the case of a link with parallel velocities
+
+** The Centrodes Loci
+- The path line traversed by a point $X$ forms a so called *locus* of that point.
+- The locus of the ICR (point $C$ above) formed with respect to an inertial frame is known as the *space centrode*.
+- The locus of the same point $C$ formed with respect to a frame attached to the body is known as the *body centrode*.
+
+[ freehand depiction of the space and body centrodes of a rolling wheel ]
+
+** Examples
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S5.11.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 1600px
+[[./meriam/prob_S5.12.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.97.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.98.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.104.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.108.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.113.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.114.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_5.117.png]]
 * Review
-From Hibbeler, Engineering Mechanics: Dynamics: Chapter 16: 8, 12, 17, 18, 23, 30*, 36,  37, 43, 45, 48, 49, 52
+From Hibbeler, Engineering Mechanics: Dynamics: Chapter 16:
