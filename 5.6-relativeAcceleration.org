@@ -92,6 +92,74 @@ This expression is slightly more complicated relative to it's velocity counterpa
 #+ATTR_HTML: :width 700px
 [[./meriam/prob_5.153.png]]
 * Relative Acceleration (on non-Inertial Frames)
+When a coordinate measurement device (system) is mounted on a moving part (for example, a disk rotating about its centroid), it records motion relative to the disk.
+
+#+ATTR_HTML: :width 600px
+[[./sketch_5.6a.png]]
+
+[freehand top view depiction of a cube sliding on the disk surface. Unit vectors $\boldsymbol{e}_1$ and $\boldsymbol{e}_2$ rotate with the disk. Points $B$ and $B'$ are instantaneously coincident, where $B$ is on the disk and $B'$ is on the block that starts sliding on the disk surface.]
+
+How can the velocity of the block relative to the disk be expressed?
+ 
+** Non-Inertial Frames
+The use of rotating frames and rotating unit vectors greatly facilitate problems in which connecting pins slide in guide slots.
+
+[freehand depiction of two bodies connected at a point via a pin sliding in a guide slot cut into one of the bodies. Two points $A$ and $P$ share a common location instantaneously. $A$ is on the pin, while $P$ is on the slot.]
+
+The relative velocity between $A$ and $P$ is provided by
+\[ \boldsymbol{v}^a - \boldsymbol{v}^p = \boldsymbol{v}^{a/p} \]
+
+where we define $\boldsymbol{v}^{a/p} \equiv \boldsymbol{v}^{rel}$.
+
+*** Motion of the Unit Vectors
+Inspect the scene below by using unit vectors $\boldsymbol{i}$ and $\boldsymbol{j}$ attached to the inertial ($XY$) system, while unit vectors $\boldsymbol{e}_1$ and $\boldsymbol{e}_2$ rotate with the moving ($xy$) frame.
+
+#+ATTR_HTML: :width 700px
+[[./sketch_5.6b.png]]
+
+Due to the frame rotation, the embedded unit vectors change orientation by differential amounts
+\[ d\boldsymbol{e}_1 = d\theta \boldsymbol{e}_2,\hspace{1em} d\boldsymbol{e}_2 = -d\theta \boldsymbol{e}_1 \]
+
+*** Inertial Position Vectors
+Relative motion of points $A$ (attached to the pin moving in the slot) and $P$ (coincident point on the slot) will be studied. The locators of $P$ and $A$ in the inertial ($XY$) frame is
+\begin{align}
+ \boldsymbol{r}^a &= \boldsymbol{r}^b + \bar{\boldsymbol{r}}^a \\
+ \boldsymbol{r}^p &= \boldsymbol{r}^b + \bar{\boldsymbol{r}}^p
+\end{align}
+
+where $\bar{\boldsymbol{r}}^\square = \bar{x}^\square \boldsymbol{e}_1 + \bar{y}^\square \boldsymbol{e}_2$ is a position vector relative to the moving (non-inertial) frame.
+
+*** Derivative of the Position Vector to $P$
+At $P$ the inertial velocity measurement reads
+\[ \dot{\boldsymbol{r}}^p = \dot{\boldsymbol{r}}^b + \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \]
+
+The terms $\dot{\boldsymbol{e}}_1$ and $\dot{\boldsymbol{e}}_2$ can be found from the unit vector differentials stated previously, as
+\[ \dot{\boldsymbol{e}_1} = \omega \boldsymbol{e}_2,\hspace{1em} \dot{\boldsymbol{e}_2} = -\omega \boldsymbol{e}_1 \]
+
+The angular velocity of the body is $\boldsymbol{\omega} = \omega \boldsymbol{k}$ from which we induce the relations
+\[ \dot{\boldsymbol{e}_1} = \boldsymbol{\omega} \times \boldsymbol{e}_1,\hspace{1em} \dot{\boldsymbol{e}_2} = \boldsymbol{\omega} \times \boldsymbol{e}_2 \]
+
+by the use of which the inertial velocity of $P$ can be expressed as
+\[ \dot{\boldsymbol{r}}^p = \dot{\boldsymbol{r}}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p \]
+
+or equivalently as
+\[ \boldsymbol{v}^p = \boldsymbol{v}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p \]
+
+
+*** Derivative of the Position to $A$
+At $A$ the inertial velocity measurement reads
+\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \dot{\bar{x}} \boldsymbol{e}_1 + \dot{\bar{y}} \boldsymbol{e}_2 + \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \]
+
+where the additional term $\dot{\bar{x}} \boldsymbol{e}_1 + \dot{\bar{y}} \boldsymbol{e}_2$ is identified as $\boldsymbol{v}^{a/p} \equiv \boldsymbol{v}^{rel}$.
+
+Furthermore, from the derivation for point $P$ we have
+\[ \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \equiv \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p \]
+
+Finally the inertial velocity of $A$ can be expressed as
+\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p + \boldsymbol{v}^{a/p} \]
+
+or equivalently as
+\[ \boldsymbol{v}^a = \boldsymbol{v}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p + \boldsymbol{v}^{a/p} \]
 
 ** Examples
 #+ATTR_HTML: :width 1600px
