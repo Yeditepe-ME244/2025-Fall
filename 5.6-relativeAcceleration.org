@@ -107,9 +107,9 @@ The use of rotating frames and rotating unit vectors greatly facilitate problems
 [freehand depiction of two bodies connected at a point via a pin sliding in a guide slot cut into one of the bodies. Two points $A$ and $P$ share a common location instantaneously. $A$ is on the pin, while $P$ is on the slot.]
 
 The relative position vector from $P$ and $A$ can be expressed in both the non-inertial as well as the inertial frames as
-\[ \hat{\boldsymbol{r}}^a - \hat{\boldsymbol{r}}^p = \hat{\boldsymbol{r}^{a/p}} = \boldsymbol{r}^{a/p} \]
+\[ \bar{\boldsymbol{r}}^a - \bar{\boldsymbol{r}}^p = \bar{\boldsymbol{r}}^{a/p} = \boldsymbol{r}^{a/p} \]
 
-where $\boldsymbol{r}^a = X^a \boldsymbol{i} + Y^a \boldsymbol{j}$ and $hat{\boldsymbol{r}}^a = \bar{x}^a \boldsymbol{e}_1 + \bar{y}^a \boldsymbol{e}_2$
+where $\boldsymbol{r}^a = X^a \boldsymbol{i} + Y^a \boldsymbol{j}$ and $\bar{\boldsymbol{r}}^a = \bar{x}^a \boldsymbol{e}_1 + \bar{y}^a \boldsymbol{e}_2$
 
 For the given instant $\boldsymbol{r}^{a} = \boldsymbol{r}^{p}$ which is equivalent to $\boldsymbol{r}^{a/p} \equiv \boldsymbol{r}^{rel} = \boldsymbol{0}$.
 
@@ -140,9 +140,9 @@ Here we study,
 
 *** Derivative of the Position Vector to $P$
 At $P$ the inertial velocity measurement reads
-\[ \dot{\boldsymbol{r}}^p = \dot{\boldsymbol{r}}^b + \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \]
+\[ \dot{\boldsymbol{r}}^p = \dot{\boldsymbol{r}}^b + \bar{x}^p \dot{\boldsymbol{e}}_1 + \bar{y}^p \dot{\boldsymbol{e}}_2 \]
 
-The terms $\dot{\boldsymbol{e}}_1$ and $\dot{\boldsymbol{e}}_2$ can be found from the unit vector differentials stated previously, as
+Note that $\dot{\bar{x}}^p$ and $\dot{\bar{x}}^p$ are both zero as the point $P$ is fixed to the moving frame. The terms $\dot{\boldsymbol{e}}_1$ and $\dot{\boldsymbol{e}}_2$ can be found from the unit vector differentials stated previously, as
 \[ \dot{\boldsymbol{e}_1} = \omega \boldsymbol{e}_2,\hspace{1em} \dot{\boldsymbol{e}_2} = -\omega \boldsymbol{e}_1 \]
 
 The angular velocity of the body is $\boldsymbol{\omega} = \omega \boldsymbol{k}$ from which we induce the relations
@@ -157,23 +157,25 @@ or equivalently as
 
 *** Derivative of the Position to $A$
 At $A$ the inertial velocity measurement reads
-\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \dot{\bar{x}} \boldsymbol{e}_1 + \dot{\bar{y}} \boldsymbol{e}_2 + \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \]
+\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \dot{\bar{x}}^a \boldsymbol{e}_1 + \dot{\bar{y}}^a \boldsymbol{e}_2 + \bar{x}^a \dot{\boldsymbol{e}}_1 + \bar{y}^a \dot{\boldsymbol{e}}_2 \]
 
-where the additional term $\dot{\bar{x}} \boldsymbol{e}_1 + \dot{\bar{y}} \boldsymbol{e}_2$ is identified as $\boldsymbol{v}^{a/p} \equiv \boldsymbol{v}^{rel}$.
+where the additional term $\dot{\bar{x}}^a \boldsymbol{e}_1 + \dot{\bar{y}}^a \boldsymbol{e}_2$ is identified as $\boldsymbol{v}^{a/p} \equiv \boldsymbol{v}^{rel}$.
 
-Furthermore, from the derivation for point $P$ we have
-\[ \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \equiv \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p \]
+Furthermore, with a similar derivation to that of $P$ we have
+\[ \bar{x}^a \dot{\boldsymbol{e}}_1 + \bar{y}^a \dot{\boldsymbol{e}}_2 \equiv \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^a \]
 
-Finally the inertial velocity of $A$ can be expressed as
+Finally, the inertial velocity of $A$ can be expressed as
 \[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^a + \boldsymbol{v}^{a/p} \]
 
 or equivalently as
 \[ \boldsymbol{v}^a = \boldsymbol{v}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p + \boldsymbol{v}^{a/p} \]
 
 ** The Total Differentiation of a Non-Inertial Vector 
-It is observed from the above that the when the time derivative of a position vector expressed in a non-inertial frame translating with $\boldsymbol{r}^b$ and rotating with $\boldsymbol{\omega}$ is taken, an additional term ($\boldsymbol{omega} \times \bar{\square}$) appears. This is not specific to position vectors only but in fact any vector written in terms of non-stationary unit vectors possess the same quality.
+It is observed from the above that a difference of ($\boldsymbol{\omega} \times \bar{\square}$) appears between the time derivatives taken with respect to a non-inertial and an inertial frame.
 
-This law is used in taking the time derivative of velocity expressed in a non-inertial frame...
+\[ \left(\frac{d\square}{dt}\right)_{XY} = \left(\frac{d\bar\square}{dt}\right)_{xy} + \boldsymbol{\omega} \times \bar\square \]
+
+This law is used in taking the time derivative of velocity expressed in a non-inertial frame by replacing the $\square$ symbol with $\boldsymbol{v}$.
 
 ** Examples
 #+ATTR_HTML: :width 1600px
