@@ -106,10 +106,12 @@ The use of rotating frames and rotating unit vectors greatly facilitate problems
 
 [freehand depiction of two bodies connected at a point via a pin sliding in a guide slot cut into one of the bodies. Two points $A$ and $P$ share a common location instantaneously. $A$ is on the pin, while $P$ is on the slot.]
 
-The relative velocity between $A$ and $P$ is provided by
-\[ \boldsymbol{v}^a - \boldsymbol{v}^p = \boldsymbol{v}^{a/p} \]
+The relative position vector from $P$ and $A$ can be expressed in both the non-inertial as well as the inertial frames as
+\[ \hat{\boldsymbol{r}}^a - \hat{\boldsymbol{r}}^p = \hat{\boldsymbol{r}^{a/p}} = \boldsymbol{r}^{a/p} \]
 
-where we define $\boldsymbol{v}^{a/p} \equiv \boldsymbol{v}^{rel}$.
+where $\boldsymbol{r}^a = X^a \boldsymbol{i} + Y^a \boldsymbol{j}$ and $hat{\boldsymbol{r}}^a = \bar{x}^a \boldsymbol{e}_1 + \bar{y}^a \boldsymbol{e}_2$
+
+For the given instant $\boldsymbol{r}^{a} = \boldsymbol{r}^{p}$ which is equivalent to $\boldsymbol{r}^{a/p} \equiv \boldsymbol{r}^{rel} = \boldsymbol{0}$.
 
 *** Motion of the Unit Vectors
 Inspect the scene below by using unit vectors $\boldsymbol{i}$ and $\boldsymbol{j}$ attached to the inertial ($XY$) system, while unit vectors $\boldsymbol{e}_1$ and $\boldsymbol{e}_2$ rotate with the moving ($xy$) frame.
@@ -121,13 +123,20 @@ Due to the frame rotation, the embedded unit vectors change orientation by diffe
 \[ d\boldsymbol{e}_1 = d\theta \boldsymbol{e}_2,\hspace{1em} d\boldsymbol{e}_2 = -d\theta \boldsymbol{e}_1 \]
 
 *** Inertial Position Vectors
-Relative motion of points $A$ (attached to the pin moving in the slot) and $P$ (coincident point on the slot) will be studied. The locators of $P$ and $A$ in the inertial ($XY$) frame is
+Relative motion of points $A$ (attached to the pin moving in the slot) and $P$ (coincident point on the slot) will be studied. The locators of $P$ and $A$ in the inertial ($XY$) frame are
 \begin{align}
  \boldsymbol{r}^a &= \boldsymbol{r}^b + \bar{\boldsymbol{r}}^a \\
  \boldsymbol{r}^p &= \boldsymbol{r}^b + \bar{\boldsymbol{r}}^p
 \end{align}
 
 where $\bar{\boldsymbol{r}}^\square = \bar{x}^\square \boldsymbol{e}_1 + \bar{y}^\square \boldsymbol{e}_2$ is a position vector relative to the moving (non-inertial) frame.
+
+Note that, we can replace the $\square$ with any of the point labels, e.g. $a$ or $b$.
+
+** Velocity Analysis
+Here we study,
+- derivative of the Position Vector to $P$, $\boldsymbol{r}^p$
+- derivative of the Position Vector to $A$, $\boldsymbol{r}^a$
 
 *** Derivative of the Position Vector to $P$
 At $P$ the inertial velocity measurement reads
@@ -156,10 +165,15 @@ Furthermore, from the derivation for point $P$ we have
 \[ \bar{x} \dot{\boldsymbol{e}}_1 + \bar{y} \dot{\boldsymbol{e}}_2 \equiv \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p \]
 
 Finally the inertial velocity of $A$ can be expressed as
-\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p + \boldsymbol{v}^{a/p} \]
+\[ \dot{\boldsymbol{r}}^a = \dot{\boldsymbol{r}}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^a + \boldsymbol{v}^{a/p} \]
 
 or equivalently as
 \[ \boldsymbol{v}^a = \boldsymbol{v}^b + \boldsymbol{\omega} \times \bar{\boldsymbol{r}}^p + \boldsymbol{v}^{a/p} \]
+
+** The Total Differentiation of a Non-Inertial Vector 
+It is observed from the above that the when the time derivative of a position vector expressed in a non-inertial frame translating with $\boldsymbol{r}^b$ and rotating with $\boldsymbol{\omega}$ is taken, an additional term ($\boldsymbol{omega} \times \bar{\square}$) appears. This is not specific to position vectors only but in fact any vector written in terms of non-stationary unit vectors possess the same quality.
+
+This law is used in taking the time derivative of velocity expressed in a non-inertial frame...
 
 ** Examples
 #+ATTR_HTML: :width 1600px
