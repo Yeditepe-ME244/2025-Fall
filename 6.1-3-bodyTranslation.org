@@ -1,0 +1,23 @@
+#+TITLE:  kinetics/general equations and translation
+#+AUTHOR: Fethi Okyar
+#+DATE: 2025-12-09
+#+SUBTITLE: Rigid Bodies
+#+DESCRIPTION: 
+#+STARTUP: overview
+#+REVEAL_THEME: simple
+#+REVEAL_INIT_OPTIONS: slideNumber:"c/t", width:1920, height:1080
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2> <h3>%s</h3> <h4>%d</h4>
+#+OPTIONS: timestamp:nil toc:1 num:t
+#+REVEAL_EXTRA_CSS: ../style.css
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+HTML_HEAD_EXTRA: <style>
+#+HTML_HEAD_EXTRA: pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+#+HTML_HEAD_EXTRA: </style>
+
+* Motivation
+[freehand depiction of a body in planar motion, (a) it's degrees-of-freedom, (b) the acceleration diagram]
+
+** Euler's Equations of Motion
+
+* Review
+

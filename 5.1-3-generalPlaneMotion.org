@@ -1,4 +1,4 @@
-#+TITLE:  kinetics of bodies/general plane motion
+#+TITLE:  kinematics of bodies/general plane motion
 #+AUTHOR: Fethi Okyar
 #+DATE: 2025-11-22
 #+SUBTITLE: Rigid-Body Kinematics

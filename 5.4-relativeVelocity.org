@@ -1,4 +1,4 @@
-#+TITLE:  kinetics of bodies/relative velocity
+#+TITLE:  kinematics of bodies/relative velocity
 #+AUTHOR: Fethi Okyar
 #+DATE: 2025-11-30
 #+SUBTITLE: Rigid-Body Kinematics
