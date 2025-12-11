@@ -1,235 +1,417 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
 <title>kinetics/general equations and translation</title>
-<meta name="author" content="Fethi Okyar" />
-<meta name="generator" content="Org Mode" />
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
-  #content { max-width: 60em; margin: auto; }
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f2f2f2;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: auto;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    top: -8px;
-    right: 12px;
-    padding: 3px;
-    color: #555;
-    background-color: #f2f2f299;
-  }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-authinfo::before { content: 'Authinfo'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .equation-container {
-    display: table;
-    text-align: center;
-    width: 100%;
-  }
-  .equation {
-    vertical-align: middle;
-  }
-  .equation-label {
-    display: table-cell;
-    text-align: right;
-    vertical-align: middle;
-  }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { }
+.underline { text-decoration: underline; }
 </style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <style>
 pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
 </style>
 </head>
 <body>
-<div id="content" class="content">
-<h1 class="title">kinetics/general equations and translation
-<br />
-<span class="subtitle">Rigid Bodies</span>
-</h1>
-<div id="table-of-contents" role="doc-toc">
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics/general equations and translation</h2> <h3>Rigid Bodies</h3> <h4>2025-12-09</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5341422">1. Motivation</a></li>
-<li><a href="#org4664509">2. Review</a></li>
+<li><a href="#/slide-org19c5fd9">1. Euler&rsquo;s Equations of Motion</a></li>
+<li><a href="#/slide-org88898c7">2. Mass Moment of Inertia</a></li>
+<li><a href="#/slide-orgdd4ef88">3. Analysis Procedure</a></li>
+<li><a href="#/slide-org2e21f73">4. Translation</a></li>
+<li><a href="#/slide-org9f85478">5. Examples</a></li>
+<li><a href="#/slide-orge9843a6">6. Review</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org5341422" class="outline-2">
-<h2 id="org5341422"><span class="section-number-2">1.</span> Motivation</h2>
+</section>
+<section>
+<section id="slide-org19c5fd9">
+<h2 id="org19c5fd9"><span class="section-number-2">1.</span> Euler&rsquo;s Equations of Motion</h2>
 <div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org3caef83">
+<h3 id="org3caef83"><span class="section-number-3">1.1.</span> Motivation</h3>
 <p>
 [freehand depiction of a body in planar motion, (a) it&rsquo;s degrees-of-freedom, (b) the acceleration diagram]
 </p>
+
+<p>
+Two translational (in-plane force) and one rotational (out-of-plane moment) equation
+</p>
+
+<p>
+Note the mass moment of inertia that appears due to the rate of change of moment of momentum term
+</p>
+</section>
+<section id="slide-org3f0f1a9">
+<h4 id="org3f0f1a9"><span class="section-number-4">1.1.1.</span> Force Reduction and Kinetic Diagram</h4>
+
+<div id="org6b9d706" class="figure">
+<p><img src="./meriam/figure_6.1.png" alt="figure_6.1.png" width="700px" />
+</p>
 </div>
-<div id="outline-container-org8115319" class="outline-3">
-<h3 id="org8115319"><span class="section-number-3">1.1.</span> Euler&rsquo;s Equations of Motion</h3>
+</section>
+<section id="slide-org4337545">
+<h3 id="org4337545"><span class="section-number-3">1.2.</span> Plane Motion Equations</h3>
+
+<div id="org02fa46a" class="figure">
+<p><img src="./meriam/figure_6.2.png" alt="figure_6.2.png" width="500px" />
+</p>
+</div>
+
+<p>
+The conversion from summation to integral forms is revisited.
+</p>
+
+<p>
+After taking the cross product in the moment of momentum, the scalar expression of the sole out-of-plane component is used.
+</p>
+
+<p>
+The three equations in plane are written about the centre of mass, \(G\)
+</p>
+</section>
+<section id="slide-org46625c9">
+<h4 id="org46625c9"><span class="section-number-4">1.2.1.</span> Kinetic Diagram in Plane</h4>
+
+<div id="orgbbfbfc3" class="figure">
+<p><img src="./meriam/figure_6.4.png" alt="figure_6.4.png" width="700px" />
+</p>
+</div>
+
+<p>
+The equivalence between the external loads and the kinetic diagram is noted.
+</p>
+</section>
+<section id="slide-org660eb3a">
+<h3 id="org660eb3a"><span class="section-number-3">1.3.</span> Alternative Moment Expressions</h3>
+<p>
+We look at points for writing equations of motion other than \(G\).
+</p>
+
+
+<div id="org6a6b973" class="figure">
+<p><img src="./meriam/figure_6.5.png" alt="figure_6.5.png" width="700px" />
+</p>
+</div>
+
+<p>
+For example a moving point \(P\) can become handy in certain situations.
+</p>
+
+<p>
+The balance of moment of momentum expression about \(P\) (in both vector as well as scalar forms are provided).
+</p>
+</section>
+<section id="slide-orgc8859b5">
+<h4 id="orgc8859b5"><span class="section-number-4">1.3.1.</span> An Equivalent of the Balance of MoM at \(P\)</h4>
+<p>
+An alternative expression of the balance of moment of momentum about \(P\) is provided.
+</p>
+
+<p>
+The proof is omitted.
+</p>
+
+<p>
+Using the rate of change of the moment of momentum about \(P\), the mass moment of inertia is evaluated at \(P\), instead of \(G\).
+</p>
+</section>
+<section id="slide-orga55f2de">
+<h4 id="orga55f2de"><span class="section-number-4">1.3.2.</span> Equations of Motion at a Stationary Point \(O\)</h4>
+<p>
+For this, we can use the expression obtained at \(P\) for \(O\), but the point \(O\) has no acceleration.
+</p>
+
+<p>
+The modified equation of motion is provided.
+</p>
+
+<p>
+Mass moment of inertia is the <b>key</b> to solving equations of motion of rigid bodies
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org88898c7">
+<h2 id="org88898c7"><span class="section-number-2">2.</span> Mass Moment of Inertia</h2>
+<p>
+For a rigid body the mass moment of inertia represents the proximity of mass distribution about a given axis, e.g. axis \(O-O\).
+</p>
+
+
+<div id="orgcd5eb27" class="figure">
+<p><img src="./meriam/figure_B.1.png" alt="figure_B.1.png" width="400px" />
+</p>
+</div>
+
+<p>
+The general expression of the mass moment of inertia is provided. Relation \(dm = \rho dv\) is noted.
+</p>
+
+<p>
+The mass moment of inertia is a property related with the selected axis of rotation.
+</p>
+
+</section>
+<section id="slide-org88898c7-split">
+<p>
+Example 1: Evaluation of the mass moment of inertia of a circular cylinder about its longitudinal axis.
+</p>
+
+</section>
+<section id="slide-org88898c7-split">
+<p>
+Example 2: The mass moment of inertias of a rectangular prism are provided about its three principal axes.
+</p>
+</section>
+<section id="slide-orgc72259b">
+<h3 id="orgc72259b"><span class="section-number-3">2.1.</span> Principal Axis</h3>
+<p>
+Distinct volumetric geometries are usually associated with characteristic axes.
+</p>
+
+<p>
+For example:
+</p>
+<ul>
+<li>a slender bar</li>
+<li>a flat disk</li>
+<li>a rectangular prism</li>
+
+</ul>
+
+<p>
+all have easily identifiable principle axes.
+</p>
+
+<p>
+The principal axes are always centroidal and the planes of symmetry of the object can be used to identify them.
+</p>
+
+<p>
+Mass moment of inertia of well known objects are provided in Appendices of engineering mechanics textbooks.
+</p>
+
+</section>
+<section id="slide-orgc72259b-split">
+
+<div id="org6f9fccc" class="figure">
+<p><img src="./meriam/table_D.4.png" alt="table_D.4.png" width="1600px" />
+</p>
+</div>
+</section>
+<section id="slide-org903db56">
+<h3 id="org903db56"><span class="section-number-3">2.2.</span> Parallel-Axis Theorem</h3>
+
+<div id="org7f6a92a" class="figure">
+<p><img src="./meriam/figure_B.3.png" alt="figure_B.3.png" width="500px" />
+</p>
+</div>
+
+<p>
+Given the centroidal mass moment of inertias, \(\bar{I}_{xx}\), etc., the mass moment of inertia can be evaluated about other parallel axes obtained by shifting the original axis by a given amount \(d\). 
+</p>
+
+<p>
+A simple formula for shifting is provided.
+</p>
+</section>
+<section id="slide-orgdfad77d">
+<h3 id="orgdfad77d"><span class="section-number-3">2.3.</span> Raduis of Gyration, \(k\)</h3>
+<p>
+This is another physical concept used to measure the proximity of the mass distribution to a given axis. It is similar and alternative to the concept of mass moment of inertia.
+</p>
+
+<p>
+The relation between \(k\) and \(I\) are provided.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgdd4ef88">
+<h2 id="orgdd4ef88"><span class="section-number-2">3.</span> Analysis Procedure</h2>
+<p>
+The analysis procedure can be divided into three phases
+</p>
+<ul>
+<li><b>Kinematics:</b> in this phase we look at whether the system consists of constrained or unconstrained bodies. Constrained bodied involve relations between their kinematic variables which need to be expressed.</li>
+<li><b>Diagrams:</b> We first select the part(s) or group of parts that will be used to produce equations of motion
+<ul>
+<li>Free-body diagram(s)</li>
+<li>Force/couple reduction diagram(s): for this we need to decide the location at which the equation of motion will be expressed</li>
+<li>Kinetic diagram(s)</li>
+
+</ul></li>
+<li><b>Equations of motion:</b>
+<ul>
+<li>Write equations of motion for each diagram group</li>
+<li>Calculate the mass moment of inertias of the bodies thru the relevant axes</li>
+<li>Use these equations to solve for the unknowns</li>
+
+</ul></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2e21f73">
+<h2 id="org2e21f73"><span class="section-number-2">4.</span> Translation</h2>
+<p>
+The type of dynamics of a moving system can be considered under three items
+</p>
+<ul>
+<li>Translation (rectilinear/curvilinear)</li>
+<li>Pure rotation</li>
+<li>General plane motion</li>
+
+</ul>
+
+</section>
+<section id="slide-org2e21f73-split">
+<p>
+In translation we have the picture
+</p>
+
+<div id="org360d8ff" class="figure">
+<p><img src="./meriam/figure_6.8.png" alt="figure_6.8.png" width="700px" />
+</p>
+</div>
+
+<p>
+Note that the number of equations to be used in the solution are
+</p>
+<ul>
+<li>two equations of motion (translational)</li>
+<li>one equation of equilibrium (rotational)</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org9f85478">
+<h2 id="org9f85478"><span class="section-number-2">5.</span> Examples</h2>
+
+<div id="org1773801" class="figure">
+<p><img src="./meriam/prob_S6.1.png" alt="prob_S6.1.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="orgb7d3eed" class="figure">
+<p><img src="./meriam/prob_S6.2.png" alt="prob_S6.2.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org3e20256" class="figure">
+<p><img src="./meriam/prob_6.2.png" alt="prob_6.2.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org8f32b22" class="figure">
+<p><img src="./meriam/prob_6.8.png" alt="prob_6.8.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org66b1aa8" class="figure">
+<p><img src="./meriam/prob_6.13.png" alt="prob_6.13.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="orge166ddd" class="figure">
+<p><img src="./meriam/prob_6.18.png" alt="prob_6.18.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org2188bbc" class="figure">
+<p><img src="./meriam/prob_6.21.png" alt="prob_6.21.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org6458e1e" class="figure">
+<p><img src="./meriam/prob_6.23.png" alt="prob_6.23.png" width="700px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org9f85478-split">
+
+<div id="org5b069f2" class="figure">
+<p><img src="./meriam/prob_6.26.png" alt="prob_6.26.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orge9843a6">
+<h2 id="orge9843a6"><span class="section-number-2">6.</span> Review</h2>
+</section>
+</section>
 </div>
 </div>
-<div id="outline-container-org4664509" class="outline-2">
-<h2 id="org4664509"><span class="section-number-2">2.</span> Review</h2>
-</div>
-</div>
-<div id="postamble" class="status">
-<p class="date">Date: 2025-12-09</p>
-<p class="author">Author: Fethi Okyar</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
-</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
 </body>
 </html>
