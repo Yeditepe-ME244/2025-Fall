@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics/general plane motion</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics/general plane motion</h2> <h3>Rigid Bodies</h3> <h4>2025-12-17</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org416154d">1. Euler&rsquo;s Equations of Motion</a></li>
+<li><a href="#/slide-orge7ffaac">2. Rotation about a Fixed-Axis</a></li>
+<li><a href="#/slide-org53be5c8">3. General Plane Motion</a></li>
+<li><a href="#/slide-orgcde4c00">4. Review</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org416154d">
+<h2 id="org416154d"><span class="section-number-2">1.</span> Euler&rsquo;s Equations of Motion</h2>
+<p>
+Two translational (in-plane force) and one rotational (out-of-plane moment) equation
+</p>
+
+<p>
+Note the mass moment of inertia that appears due to the rate of change of moment of momentum term
+</p>
+
+<p>
+Force Reduction and Kinetic Diagram
+</p>
+
+<div id="org145b097" class="figure">
+<p><img src="./meriam/figure_6.1.png" alt="figure_6.1.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orge7ffaac">
+<h2 id="orge7ffaac"><span class="section-number-2">2.</span> Rotation about a Fixed-Axis</h2>
+
+<div id="org2a9b48d" class="figure">
+<p><img src="./meriam/figure_6.9a.png" alt="figure_6.9a.png" width="400px" />
+</p>
+</div>
+
+<p>
+[freehand depiction of the free-body and kinetic diagrams]
+</p>
+
+<p>
+Equations of motion will be stated by writing the balance of momentum at the center of mass, and the balance of moment of momentum at point of convenience.
+</p>
+</section>
+<section id="slide-org2275923">
+<h3 id="org2275923"><span class="section-number-3">2.1.</span> At the Center of Mass, \(G\)</h3>
+<p>
+\[ \sum M^G = \bar{I} \alpha \]
+</p>
+</section>
+<section id="slide-org1ca0780">
+<h3 id="org1ca0780"><span class="section-number-3">2.2.</span> About the Fixed Axis, \(O\)</h3>
+<p>
+\[ \sum M^O = I^O \alpha \]
+</p>
+
+<p>
+Notes:
+</p>
+<ol>
+<li>the derivation of this formula by carrying the kinetic resultants to point O on the left-hand side and by evaluating the expression for \(I^O\) using the parallel-axis theorem on the right-hand side.</li>
+
+</ol>
+</section>
+<section id="slide-orgb6fe499">
+<h3 id="orgb6fe499"><span class="section-number-3">2.3.</span> About the Center of Percussion, \(Q\)</h3>
+
+<div id="orge0ee3a3" class="figure">
+<p><img src="./meriam/figure_6.10.png" alt="figure_6.10.png" width="400px" />
+</p>
+</div>
+
+<p>
+We may carry the kinetic resultants on the line \(OG\) to find a location \(Q\) with zero net kinetic moment, satisfying \(m \bar{r} \alpha q = \bar{I} \alpha + m \bar{r} \alpha (\bar{r})\).
+</p>
+
+<p>
+This location is called a <i>center of percussion</i>. It follows that the sum of the moments of all external forces about this point is always zero, i.e. \(\sum M^Q = 0\).
+</p>
+
+<p>
+Using the parallel-axis theorem and \(I^O = (k^O)^2\) yields \(q = (k^O)^2/\bar{r}\).
+</p>
+</section>
+<section id="slide-org126f2ef">
+<h3 id="org126f2ef"><span class="section-number-3">2.4.</span> Examples</h3>
+
+<div id="org27d7687" class="figure">
+<p><img src="./meriam/prob_S6.3.png" alt="prob_S6.3.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org126f2ef-split">
+
+<div id="org3131d49" class="figure">
+<p><img src="./meriam/prob_S6.4.png" alt="prob_S6.4.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org126f2ef-split">
+
+<div id="org4a08c26" class="figure">
+<p><img src="./meriam/prob_6.X.png" alt="prob_6.X.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org53be5c8">
+<h2 id="org53be5c8"><span class="section-number-2">3.</span> General Plane Motion</h2>
+<p>
+The equations of general plane motion are found in the same way as in the prior section. However, there is no stationary point in this case.
+</p>
+
+<p>
+The selection of the location to write the moment equation requires attention. Viable alternative locations are:
+</p>
+<ol>
+<li>The center of mass, \(G\)</li>
+<li>Arbirtraty point, \(P\)</li>
+
+</ol>
+
+</section>
+<section id="slide-org53be5c8-split">
+<p>
+For example, the intersection point \(P\) of two external forces may prove to facilitate the solution process. 
+</p>
+
+<div id="orga745009" class="figure">
+<p><img src="./meriam/figure_6.5.png" alt="figure_6.5.png" width="700px" />
+</p>
+</div>
+
+<p>
+In this case the moment equation can be written as \(\sum M^P = \bar{I}\alpha + m \bar{a}d\).
+</p>
+
+<p>
+If the accelaration at \(P\) is known then it may even be more convenient to use the alternate form \(\sum \boldsymbol{M}^P = I^P \boldsymbol{\alpha} + \bar{\boldsymbol{\rho}} \times m \boldsymbol{a}^P\). 
+</p>
+
+</section>
+<section id="slide-org53be5c8-split">
+<p>
+Some other points that need attention will be
+</p>
+<ol>
+<li>Constrained versus Unconstrained Motion</li>
+<li>Number of Unknowns</li>
+<li>Identification of the Body or System</li>
+<li>Kinematics</li>
+<li>Consistency of Motion Assumption between Free-Bodies</li>
+
+</ol>
+</section>
+<section id="slide-org6a4f883">
+<h3 id="org6a4f883"><span class="section-number-3">3.1.</span> Examples</h3>
+
+<div id="orgd4ade96" class="figure">
+<p><img src="./meriam/prob_S6.5.png" alt="prob_S6.5.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6a4f883-split">
+
+<div id="orga327d21" class="figure">
+<p><img src="./meriam/prob_S6.6.png" alt="prob_S6.6.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6a4f883-split">
+
+<div id="org3be8530" class="figure">
+<p><img src="./meriam/prob_S6.7.png" alt="prob_S6.7.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6a4f883-split">
+
+<div id="orgd2764c1" class="figure">
+<p><img src="./meriam/prob_S6.8.png" alt="prob_S6.8.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-org6a4f883-split">
+
+<div id="orgfab10dd" class="figure">
+<p><img src="./meriam/prob_6.X.png" alt="prob_6.X.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgcde4c00">
+<h2 id="orgcde4c00"><span class="section-number-2">4.</span> Review</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

@@ -24,7 +24,7 @@
 |    9 | Nov.25 | [[./5.1-3-generalPlaneMotion.html][general plane (absolute) motion]], [[./5.4-relativeVelocity.html][relative velocity]]       |
 |   10 | Dec.2  | [[./5.6-relativeAcceleration.html][relative acceleration]] (inertial, non-inertial)           |
 |   11 | Dec.9  | planar kinetics ([[./4.2-4-groupKinetics.html][particle group]], [[./6.1-3-bodyTranslation.html][rigid body translation]]) |
-|      |        |                                                          |
+|   12 | Dec.16 | [[./6.4-5-generalPlaneMotion.html][rotation and general motion]], work and energy             |
 
 * References
 ** Computer Algebra System (maxima)
