@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>kinetics/work-energy relations</title>
+<meta name="author" content="Fethi Okyar"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/simple.css" id="theme"/>
+
+<link rel="stylesheet" href="../style.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<style>
+pre.src { font-size: 0.8em; color: white; background: black; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>kinetics/work-energy relations</h2> <h3>Rigid Bodies</h3> <h4>2025-12-18</h4>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org9850ace">1. Motivation</a></li>
+<li><a href="#/slide-orga2e9658">2. Work of Forces and Couples</a></li>
+<li><a href="#/slide-org79b21cb">3. Kinetic Energy</a></li>
+<li><a href="#/slide-orgc40c5b3">4. Potential Energy</a></li>
+<li><a href="#/slide-org973af47">5. Power</a></li>
+<li><a href="#/slide-orge53587c">6. Examples</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org9850ace">
+<h2 id="org9850ace"><span class="section-number-2">1.</span> Motivation</h2>
+<ul>
+<li>For mass points we visited work-energy relations which was seen to be useful in describing motion that resulted from the cumulative effect of forces acting through distances traveled over the path trajectory.</li>
+<li>When the forces were conservative (non-dissipative), we were able to determine velocity changes by analyzing the energy conditions at the beginning and end states of the motion interval, without  determining accelerations.</li>
+<li>Here we extend this principle to rigid bodies.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orga2e9658">
+<h2 id="orga2e9658"><span class="section-number-2">2.</span> Work of Forces and Couples</h2>
+<p>
+The work done by a force \(\boldsymbol{F}\) is
+\[ U = \int\boldsymbol{F} \cdot d\boldsymbol{r} \hspace{1.5em} \mathrm{or} \hspace{1.5em} U = \int (F \cos \alpha) ds \]
+</p>
+
+</section>
+<section id="slide-orga2e9658-split">
+
+<div id="orgb3a743b" class="figure">
+<p><img src="./meriam/figure_6.11.png" alt="figure_6.11.png" width="500px" />
+</p>
+</div>
+
+<p>
+The work done by a couple produces \(dU = F (b\,d\theta) = M\,d\theta\) due to the rotational part of the motion, which gives
+\[ U = \int M\, d\theta \]
+in a finite rotation.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org79b21cb">
+<h2 id="org79b21cb"><span class="section-number-2">3.</span> Kinetic Energy</h2>
+<p>
+For rigid bodies in
+</p>
+<ul>
+<li>translation</li>
+<li>fixed-axis rotation</li>
+<li>general plane motion</li>
+
+</ul>
+</section>
+<section id="slide-org8a9adbc">
+<h3 id="org8a9adbc"><span class="section-number-3">3.1.</span> Translation</h3>
+
+<div id="org711d174" class="figure">
+<p><img src="./meriam/figure_6.12a.png" alt="figure_6.12a.png" width="500px" />
+</p>
+</div>
+
+<p>
+From the particle \(T_i = \frac{1}{2} m_i v^2\) to the entire body \(T = \lim \sum \frac{1}{2} m_i v^2 = \frac{1}{2} \int_B v^2 dm\) giving
+\[ T = \frac{1}{2} mv^2 \]
+</p>
+</section>
+<section id="slide-org63388c4">
+<h3 id="org63388c4"><span class="section-number-3">3.2.</span> Fixed-axis rotation</h3>
+
+<div id="org659753e" class="figure">
+<p><img src="./meriam/figure_6.12b.png" alt="figure_6.12b.png" width="500px" />
+</p>
+</div>
+
+<p>
+For the particle rotating with angular speed \(\omega\) about point \(O\), \(T_i = \frac{1}{2} m_i (r_i\omega)^2\) extending to the entire body as \(T = \frac{1}{2} \omega^2 \lim \sum  m_i r_i^2 = \frac{1}{2} \omega^2 \int_B r^2 dm\) where \(\int_B r^2 dm \equiv I^O\) so that
+\[ T = \frac{1}{2} I^O \omega^2 \]
+</p>
+</section>
+<section id="slide-orgae4f26f">
+<h3 id="orgae4f26f"><span class="section-number-3">3.3.</span> General plane motion</h3>
+
+<div id="orgc6d03cb" class="figure">
+<p><img src="./meriam/figure_6.12c.png" alt="figure_6.12c.png" width="500px" />
+</p>
+</div>
+
+<p>
+The velocity \(v_i\) of \(m_i\) may be expressed in terms of the velocity of the mass center \(\bar{v}\) and the velocity \(\rho_i\omega\) relative to the mass center. With the aid of the cosine rule for adding vector components the kinetic energy for the particle can be written as
+\[ T = \lim \sum \frac{1}{2} m_i (\bar{v}^2 + \rho_i^2 \omega^2 + 2 \bar{v} \rho_i \omega \cos \theta) \]
+</p>
+
+</section>
+<section id="slide-orgae4f26f-split">
+
+<div id="org09c8205" class="figure">
+<p><img src="./meriam/figure_6.12c.png" alt="figure_6.12c.png" width="500px" />
+</p>
+</div>
+
+<p>
+Factoring out \(\bar{v}\) and \(\omega\) out of the summation the last term becomes
+\[ \omega \bar{v} \lim \sum m_i \rho_i \cos \theta = \omega \bar{v} \int_B y\, dm = 0 \]
+due to the integral being taken about the center of mass and the kinetic energy is obtained as
+\[T = \frac{1}{2} m \bar{v} + \frac{1}{2} \bar{I} \omega^2 \]
+</p>
+</section>
+<section id="slide-orgbf21d02">
+<h4 id="orgbf21d02"><span class="section-number-4">3.3.1.</span> Alternative expression</h4>
+<p>
+Kinetic energy of a rigid body in plane motion can also be conveniently expressed about the instantaneous center \(C\) of velocity as
+\[ T = \frac{1}{2} I^C \omega^2 \]
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgc40c5b3">
+<h2 id="orgc40c5b3"><span class="section-number-2">4.</span> Potential Energy</h2>
+<p>
+The work-energy relation was introduced as
+\[ T_1 + U_{1-2} = T_2 \]
+applies to any mechanical system including rigid bodies.
+</p>
+
+<p>
+If the effect of gravity and springs are expressed by means of potential energy rather than work, then the above equation may be rewritten as
+\[ T_1 + V_1 + U'_{1-2} = T_2 + V_2 \]
+where \(U'\) denotes the work by all <i>active forces</i> other than gravity and spring forces.
+</p>
+
+<p>
+A free-body diagram or an active-force diagram should be used in either case.
+</p>
+
+<p>
+The work-energy method is most useful for analyzing conservative force systems that do not involve dissipative forces such as friction.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-org973af47">
+<h2 id="org973af47"><span class="section-number-2">5.</span> Power</h2>
+<p>
+For a force \(\boldsymbol{F}\) acting on a rigid body in plane motion, the power developed by that force at a given instant is calculated as the rate at which the force is doing work
+\[ P = \frac{dU}{dt} = \frac{\boldsymbol{F} \cdot d\boldsymbol{r}}{dt} = \boldsymbol{F} \cdot \boldsymbol{v} \]
+</p>
+
+<p>
+Similarly, for a couple \(M\) acting on the body, the power developed by the couple at a given instant is the rate at which it is doing work
+\[ P = \frac{dU}{dt} = \frac{M\,d\theta}{dt} = M\omega\]
+</p>
+
+<p>
+If the force and couple act simultaneously, the total instantaneous power is
+\[ P = \boldsymbol{F} \cdot \boldsymbol{v} + M\omega \]
+</p>
+
+</section>
+<section id="slide-org973af47-split">
+<p>
+For an infinitesimal displacement the work-energy expression becomes
+\[ dU' = dT + dV \]
+</p>
+
+<p>
+Dividing by dt the total power of active forces and couples are
+\[ P = \frac{dU'}{dt} = \dot{T} + \dot{V} = \frac{d}{dt} (T+V) \]
+</p>
+
+<p>
+Note that the first term may be written as
+</p>
+<div>
+\begin{align}
+\dot{T} &= \frac{d}{dt} \left( \frac{1}{2} m \bar{\boldsymbol{v}} \cdot \bar{\boldsymbol{v}} + \frac{1}{2} M \omega \right) \\
+ &= \frac{1}{2} m (\bar{\boldsymbol{a}} \cdot \bar{\boldsymbol{v}} + \bar{\boldsymbol{v}} \cdot \bar{\boldsymbol{a}} ) + \bar{I} \omega \dot{\omega} \\
+ &= m \bar{\boldsymbol{a}} \cdot \bar{\boldsymbol{v}} + (\bar{I}\alpha)\omega = \boldsymbol{R}\cdot \bar{\boldsymbol{v}} + \bar{M}\omega
+\end{align}
+
+</div>
+<p>
+where \(\boldsymbol{R}\) is the resultant of <i>all</i> forces acting on the body and \(\bar{M}\) is the resultant moment about the mass center \(G\) of <i>all</i> forces.
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge53587c">
+<h2 id="orge53587c"><span class="section-number-2">6.</span> Examples</h2>
+
+<div id="org5143c90" class="figure">
+<p><img src="./meriam/prob_S6.9.png" alt="prob_S6.9.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge53587c-split">
+
+<div id="org95e3cdd" class="figure">
+<p><img src="./meriam/prob_S6.10.png" alt="prob_S6.10.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge53587c-split">
+
+<div id="org8d9cf76" class="figure">
+<p><img src="./meriam/prob_S6.11.png" alt="prob_S6.11.png" width="1600px" />
+</p>
+</div>
+
+</section>
+<section id="slide-orge53587c-split">
+
+<div id="orgdb39761" class="figure">
+<p><img src="./meriam/prob_6.X.png" alt="prob_6.X.png" width="700px" />
+</p>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:"c/t", width:1920, height:1080,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>
