@@ -123,5 +123,24 @@ where $\boldsymbol{R}$ is the resultant of /all/ forces acting on the body and $
 
 #+REVEAL: split
 #+ATTR_HTML: :width 700px
-[[./meriam/prob_6.X.png]]
+[[./meriam/prob_6.113.png]]
 
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_6.117.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_6.121.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_6.130.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_6.131.png]]
+
+#+REVEAL: split
+#+ATTR_HTML: :width 700px
+[[./meriam/prob_6.140.png]]
